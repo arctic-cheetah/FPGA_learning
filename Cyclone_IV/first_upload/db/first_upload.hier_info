@@ -1,0 +1,8 @@
+|test
+
+
+|test|Timing:t
+in => out.DATAIN
+out <= in.DB_MAX_OUTPUT_PORT_TYPE
+
+
