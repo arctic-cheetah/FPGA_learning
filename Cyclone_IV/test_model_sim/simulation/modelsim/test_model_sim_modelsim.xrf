@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, /home/london/intelFPGA/Cyclone_IV/test_model_sim/test_model_sim.vhd
+source_file = 1, /home/london/intelFPGA/Cyclone_IV/test_model_sim/test_model_sim_tb.vhd
+source_file = 1, /home/london/intelFPGA_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /home/london/intelFPGA_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /home/london/intelFPGA_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /home/london/intelFPGA_lite/20.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, /home/london/intelFPGA/Cyclone_IV/test_model_sim/db/test_model_sim.cbx.xml
+design_name = hard_block
+design_name = test_model_sim
+instance = comp, \sum~output\, sum~output, test_model_sim, 1
+instance = comp, \carry~output\, carry~output, test_model_sim, 1
+instance = comp, \A~input\, A~input, test_model_sim, 1
+instance = comp, \B~input\, B~input, test_model_sim, 1
+instance = comp, \sum~0\, sum~0, test_model_sim, 1
+instance = comp, \carry~0\, carry~0, test_model_sim, 1

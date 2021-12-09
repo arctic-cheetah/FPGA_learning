@@ -14,7 +14,6 @@ end blink_led_clk;
 
 architecture rtl of blink_led_clk is
 	signal state_LED: std_logic;
-	
 	--Frequency of the FPGA board in MHZ
 	constant FPGA_clock: integer := 50000000;
 	constant LED_FREQ: integer := 5;
