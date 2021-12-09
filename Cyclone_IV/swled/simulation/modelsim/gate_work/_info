@@ -1,0 +1,77 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/london/intelFPGA/Cyclone_IV/swled/simulation/modelsim
+vhard_block
+Z1 !s110 1638996818
+!i10b 1
+!s100 RRfiSGm>jEY5G2V`Yj0@l0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IH6HfEO22LX6UkB5LN[jof0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1638996807
+Z5 8swled.vo
+Z6 Fswled.vo
+!i122 0
+L0 189 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1638996818.000000
+Z9 !s107 swled.vo|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|swled.vo|
+!i113 1
+Z11 o-vlog01compat -work work
+Z12 !s92 -vlog01compat -work work +incdir+.
+Z13 tCvgOpt 0
+Eswled
+Z14 w1638840118
+Z15 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z16 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z17 8/home/london/intelFPGA/Cyclone_IV/swled/swled.vhd
+Z18 F/home/london/intelFPGA/Cyclone_IV/swled/swled.vhd
+l0
+L4 1
+VbfSQ50HKSVDY0kI>6Y@_M0
+!s100 g^[QK=oATU7E7nKoWa8a03
+Z19 OV;C;2020.1;71
+31
+R1
+!i10b 1
+R8
+Z20 !s90 -reportprogress|300|-93|-work|work|/home/london/intelFPGA/Cyclone_IV/swled/swled.vhd|
+!s107 /home/london/intelFPGA/Cyclone_IV/swled/swled.vhd|
+!i113 1
+Z21 o-93 -work work
+Z22 tExplicit 1 CvgOpt 0
+Art1
+R15
+R16
+DEx4 work 5 swled 0 22 bfSQ50HKSVDY0kI>6Y@_M0
+!i122 1
+l18
+L17 7
+V7e^YDE58Vb5mUf7ek5B^M2
+!s100 9I_3?lh[37mV47KZNAzF[3
+R19
+31
+R1
+!i10b 1
+R8
+R20
+Z23 !s107 /home/london/intelFPGA/Cyclone_IV/swled/swled.vhd|
+!i113 1
+R21
+R22

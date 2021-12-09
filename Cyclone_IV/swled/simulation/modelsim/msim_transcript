@@ -1,0 +1,53 @@
+# do swled_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying /home/london/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {swled.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:53:38 on Dec 09,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." swled.vo 
+# -- Compiling module swled
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	swled
+# End time: 07:53:38 on Dec 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {/home/london/intelFPGA/Cyclone_IV/swled/swled.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:53:38 on Dec 09,2021
+# vcom -reportprogress 300 -93 -work work /home/london/intelFPGA/Cyclone_IV/swled/swled.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity swled
+# -- Compiling architecture rt1 of swled
+# End time: 07:53:38 on Dec 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  swled
+# vsim -t 1ps -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" swled 
+# Start time: 07:53:38 on Dec 09,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.swled(rt1)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# 
+# stdin: <EOF>
+# End time: 07:56:20 on Dec 09,2021, Elapsed time: 0:02:42
+# Errors: 0, Warnings: 0

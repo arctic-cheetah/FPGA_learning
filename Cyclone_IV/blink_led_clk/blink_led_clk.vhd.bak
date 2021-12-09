@@ -1,0 +1,37 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity blink_led_clk is
+	port (
+		clk : in std_logic; 
+		led1 : out std_logic;
+		led2 : out std_logic;
+	);
+end blink_led_clk
+
+architecture rtl of blink_led_clk is
+	signal state_LED: std_logic;
+	--Frequency of the FPGA board in MHZ
+	constant CLK: integer := 50000000;
+	constant LED_FREQ: integer := 2;
+	--The amount of edges to count
+	constant MAX_CNT: integer := (CLK / LED_FREQ / 2);
+	/*The number of bits used to count the number of edges*/
+	signal cnt: unsigned (24 downto 0);
+	
+begin
+	process (clk) begin
+	if rising_edge (clk) then
+		if (cnt = MAX_CNT) then
+			cnt <= (others => '0');
+			state_LED <= not state_LED;
+		else
+			cnt <= cnt + 1;
+		end if;
+	end if;
+	end process;
+	
+	led_1 <= state_LED;
+	led_2 <= state_LED;
+end rtl;

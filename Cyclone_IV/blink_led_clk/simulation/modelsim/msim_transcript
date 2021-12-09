@@ -1,0 +1,69 @@
+# do blink_led_clk_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying /home/london/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {blink_led_clk.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:25:33 on Dec 09,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." blink_led_clk.vo 
+# -- Compiling module blink_led_clk
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	blink_led_clk
+# End time: 12:25:33 on Dec 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vlog -reportprogress 300 -work work /home/london/intelFPGA/Cyclone_IV/blink_led_clk/simulation/modelsim/blink_led_clk.vo
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:25:52 on Dec 09,2021
+# vlog -reportprogress 300 -work work /home/london/intelFPGA/Cyclone_IV/blink_led_clk/simulation/modelsim/blink_led_clk.vo 
+# -- Compiling module blink_led_clk
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	blink_led_clk
+# End time: 12:25:52 on Dec 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/london/intelFPGA/Cyclone_IV/blink_led_clk/simulation/modelsim/blink_led_clk.vo
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:25:57 on Dec 09,2021
+# vlog -reportprogress 300 -work work /home/london/intelFPGA/Cyclone_IV/blink_led_clk/simulation/modelsim/blink_led_clk.vo 
+# -- Compiling module blink_led_clk
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	blink_led_clk
+# End time: 12:25:57 on Dec 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/london/intelFPGA/Cyclone_IV/blink_led_clk/simulation/modelsim/blink_led_clk.vo
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:25:58 on Dec 09,2021
+# vlog -reportprogress 300 -work work /home/london/intelFPGA/Cyclone_IV/blink_led_clk/simulation/modelsim/blink_led_clk.vo 
+# -- Compiling module blink_led_clk
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	blink_led_clk
+# End time: 12:25:58 on Dec 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/london/intelFPGA/Cyclone_IV/blink_led_clk/simulation/modelsim/blink_led_clk.vo
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:25:59 on Dec 09,2021
+# vlog -reportprogress 300 -work work /home/london/intelFPGA/Cyclone_IV/blink_led_clk/simulation/modelsim/blink_led_clk.vo 
+# -- Compiling module blink_led_clk
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	blink_led_clk
+# End time: 12:25:59 on Dec 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

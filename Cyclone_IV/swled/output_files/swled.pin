@@ -1,4 +1,4 @@
- -- Copyright (C) 2021  Intel Corporation. All rights reserved.
+ -- Copyright (C) 2020  Intel Corporation. All rights reserved.
  -- Your use of Intel Corporation's design tools, logic functions 
  -- and other software and tools, and any partner logic 
  -- functions, and any output files from any of the foregoing 
@@ -64,7 +64,7 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 CHIP  "swled"  ASSIGNED TO AN: EP4CE6E22C8
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
@@ -152,10 +152,10 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : 80        :        :                   :      
 VCCIO5                       : 81        : power  :                   : 2.5V    : 5         :                
 GND                          : 82        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 83        :        :                   :         : 5         :                
-result_4                     : 84        : output : 2.5 V             :         : 5         : Y              
-result_3                     : 85        : output : 2.5 V             :         : 5         : Y              
-result_2                     : 86        : output : 2.5 V             :         : 5         : Y              
-result_1                     : 87        : output : 2.5 V             :         : 5         : Y              
+result_1                     : 84        : output : 2.5 V             :         : 5         : Y              
+result_2                     : 85        : output : 2.5 V             :         : 5         : Y              
+result_3                     : 86        : output : 2.5 V             :         : 5         : Y              
+result_4                     : 87        : output : 2.5 V             :         : 5         : Y              
 input_1                      : 88        : input  : 2.5 V             :         : 5         : Y              
 input_2                      : 89        : input  : 2.5 V             :         : 5         : Y              
 input_3                      : 90        : input  : 2.5 V             :         : 6         : Y              
