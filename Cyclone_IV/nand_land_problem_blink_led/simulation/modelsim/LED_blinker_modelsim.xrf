@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, /home/london/intelFPGA/Cyclone_IV/nand_land_problem_blink_led/LED_blinker.v
+source_file = 1, /home/london/intelFPGA/Cyclone_IV/nand_land_problem_blink_led/db/LED_blinker.cbx.xml
+design_name = LED_blinker
+instance = comp, \LED~output , LED~output, LED_blinker, 1
+instance = comp, \SW_1~input , SW_1~input, LED_blinker, 1
+instance = comp, \SW_2~input , SW_2~input, LED_blinker, 1
+instance = comp, \EN~input , EN~input, LED_blinker, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

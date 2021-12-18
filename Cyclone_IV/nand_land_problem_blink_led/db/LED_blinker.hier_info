@@ -1,0 +1,7 @@
+|LED_blinker
+LED <= <GND>
+SW_1 => ~NO_FANOUT~
+SW_2 => ~NO_FANOUT~
+EN => ~NO_FANOUT~
+
+

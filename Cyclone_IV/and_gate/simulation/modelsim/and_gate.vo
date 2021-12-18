@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
-// DATE "12/09/2021 12:54:37"
+// DATE "12/10/2021 21:09:23"
 
 // 
 // Device: Altera EP4CE6E22C8 Package TQFP144
@@ -38,9 +38,9 @@ input 	input2;
 output 	and_result;
 
 // Design Ports Information
-// and_result	=>  Location: PIN_87,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// input1	=>  Location: PIN_88,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// input2	=>  Location: PIN_89,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// and_result	=>  Location: PIN_34,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// input1	=>  Location: PIN_2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// input2	=>  Location: PIN_1,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -65,7 +65,7 @@ hard_block auto_generated_inst(
 	.devclrn(devclrn),
 	.devoe(devoe));
 
-// Location: IOOBUF_X34_Y10_N9
+// Location: IOOBUF_X0_Y5_N16
 cycloneive_io_obuf \and_result~output (
 	.i(\and_result~0_combout ),
 	.oe(vcc),
@@ -78,7 +78,7 @@ defparam \and_result~output .bus_hold = "false";
 defparam \and_result~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOIBUF_X34_Y12_N15
+// Location: IOIBUF_X0_Y23_N1
 cycloneive_io_ibuf \input2~input (
 	.i(input2),
 	.ibar(gnd),
@@ -88,7 +88,7 @@ defparam \input2~input .bus_hold = "false";
 defparam \input2~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X34_Y12_N22
+// Location: IOIBUF_X0_Y23_N8
 cycloneive_io_ibuf \input1~input (
 	.i(input1),
 	.ibar(gnd),
@@ -98,7 +98,7 @@ defparam \input1~input .bus_hold = "false";
 defparam \input1~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LCCOMB_X33_Y12_N8
+// Location: LCCOMB_X1_Y23_N24
 cycloneive_lcell_comb \and_result~0 (
 // Equation(s):
 // \and_result~0_combout  = (\input2~input_o  & \input1~input_o )

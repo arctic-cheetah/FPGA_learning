@@ -1,0 +1,4 @@
+module LED_blinker
+	output wire LED;
+	input wire SW_1, SW_2, EN;
+endmodule

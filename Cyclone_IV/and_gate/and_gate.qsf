@@ -60,8 +60,8 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VERILOG_FILE and_gate.v
-set_location_assignment PIN_88 -to input1
-set_location_assignment PIN_89 -to input2
-set_location_assignment PIN_87 -to and_result
+set_location_assignment PIN_2 -to input1
+set_location_assignment PIN_1 -to input2
+set_location_assignment PIN_3 -to and_result
 set_instance_assignment -name FAST_OUTPUT_REGISTER OFF -to PIN_87
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

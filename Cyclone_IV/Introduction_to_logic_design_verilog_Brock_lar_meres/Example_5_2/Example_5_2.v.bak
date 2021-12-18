@@ -1,0 +1,5 @@
+module Example_5_2(A, B, C, F);
+	input wire A,B,C;
+	output wire F;
+	
+endmodule;
