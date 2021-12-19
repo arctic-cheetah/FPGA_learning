@@ -1,0 +1,50 @@
+# Reading pref.tcl
+# do square_wave_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {square_wave.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:54:10 on Dec 19,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." square_wave.vo 
+# -- Compiling module square_wave
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	square_wave
+# End time: 09:54:10 on Dec 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/square_wave {C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/square_wave/square_wave.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:54:10 on Dec 19,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/square_wave" C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/square_wave/square_wave.v 
+# -- Compiling module square_wave
+# 
+# Top level modules:
+# 	square_wave
+# End time: 09:54:10 on Dec 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  Square_wave_tb
+# vsim -t 1ps -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" Square_wave_tb 
+# Start time: 09:54:10 on Dec 19,2021
+# ** Error: (vsim-3170) Could not find 'Square_wave_tb'.
+#         Searched libraries:
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cycloneive
+#             C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/square_wave/simulation/modelsim/gate_work
+#             C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/square_wave/simulation/modelsim/gate_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./square_wave_run_msim_gate_verilog.do PAUSED at line 12
+# End time: 09:54:36 on Dec 19,2021, Elapsed time: 0:00:26
+# Errors: 1, Warnings: 0

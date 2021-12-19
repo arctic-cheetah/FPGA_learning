@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at LED_blinker.v(24): always construct contains both blocking and non-blocking assignments File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/LED_blinker.v Line: 24
+Warning (10268): Verilog HDL information at LED_blinker.v(38): always construct contains both blocking and non-blocking assignments File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/LED_blinker.v Line: 38

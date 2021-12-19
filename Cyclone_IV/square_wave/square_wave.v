@@ -3,7 +3,7 @@ module square_wave (input wire clk, output reg square_wave);
 	//Board clock is 66MHZ
 	localparam CLOCK_FREQUENCY = 66000000;
 	//Change frequency here:
-	localparam freq = 1;
+	localparam freq = 20;
 	//Half Duty Cycle
 	localparam COUNT_FREQ = CLOCK_FREQUENCY / freq / 2;
 	integer counter = 0;

@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/square_wave/simulation/modelsim
+vhard_block
+Z1 !s110 1639868050
+!i10b 1
+!s100 []zU37hNoJiG:ebhY5J9n0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IYBR:OfNKU8LR3[[OgPZQO2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1639868017
+8square_wave.vo
+Fsquare_wave.vo
+!i122 0
+L0 1821 34
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1639868050.000000
+!s107 square_wave.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|square_wave.vo|
+!i113 1
+Z6 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+Z7 tCvgOpt 0
+vsquare_wave
+R1
+!i10b 1
+!s100 d<gkD<fiV6@3@:Ic[8OdE3
+R2
+Iz5hPodD>1IoU1BY1MoJ[@2
+R3
+R0
+w1639867811
+8C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/square_wave/square_wave.v
+FC:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/square_wave/square_wave.v
+!i122 1
+L0 2 18
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/square_wave/square_wave.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/square_wave|C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/square_wave/square_wave.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/square_wave
+R7

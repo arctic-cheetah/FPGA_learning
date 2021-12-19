@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sun Dec 19 20:14:32 2021
+Fitter Status : Successful - Mon Dec 20 01:34:39 2021
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : square_wave
 Top-level Entity Name : square_wave
 Family : Cyclone IV E
 Device : EP4CE6E22C8
 Timing Models : Final
-Total logic elements : 57 / 6,272 ( < 1 % )
-    Total combinational functions : 57 / 6,272 ( < 1 % )
+Total logic elements : 54 / 6,272 ( < 1 % )
+    Total combinational functions : 54 / 6,272 ( < 1 % )
     Dedicated logic registers : 33 / 6,272 ( < 1 % )
 Total registers : 33
 Total pins : 2 / 92 ( 2 % )

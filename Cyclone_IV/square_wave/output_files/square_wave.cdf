@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6E22) Path("/home/london/intelFPGA/Cyclone_IV/square_wave/output_files/") File("square_wave.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE6E22) Path("C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/square_wave/output_files/") File("square_wave.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

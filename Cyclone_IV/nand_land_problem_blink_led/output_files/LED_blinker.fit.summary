@@ -1,15 +1,15 @@
-Fitter Status : Successful - Sun Dec 19 00:30:57 2021
+Fitter Status : Successful - Mon Dec 20 02:57:55 2021
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : LED_blinker
 Top-level Entity Name : LED_blinker
 Family : Cyclone IV E
 Device : EP4CE6E22C8
 Timing Models : Final
-Total logic elements : 0 / 6,272 ( 0 % )
-    Total combinational functions : 0 / 6,272 ( 0 % )
-    Dedicated logic registers : 0 / 6,272 ( 0 % )
-Total registers : 0
-Total pins : 4 / 92 ( 4 % )
+Total logic elements : 184 / 6,272 ( 3 % )
+    Total combinational functions : 181 / 6,272 ( 3 % )
+    Dedicated logic registers : 129 / 6,272 ( 2 % )
+Total registers : 129
+Total pins : 5 / 92 ( 5 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
