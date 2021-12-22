@@ -1,5 +1,5 @@
 |LED_blinker
-LED <= LED.DB_MAX_OUTPUT_PORT_TYPE
+LED << LED.DB_MAX_OUTPUT_PORT_TYPE
 SW_1 => always0.IN0
 SW_1 => always0.IN0
 SW_1 => always0.IN0

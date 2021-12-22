@@ -48,7 +48,7 @@ module LED_blinker (output wire LED, input wire SW_1, SW_2, EN, clk);
 			HZ_10_cnt <= 0; 
 		end
 		
-		//50HZ
+		//20Hz
 		if (!SW_1 && SW_2) begin
 			if (HZ_20_cnt == HZ_20) begin
 				HZ_20_cnt <= 0; 
@@ -60,7 +60,7 @@ module LED_blinker (output wire LED, input wire SW_1, SW_2, EN, clk);
 			HZ_20_cnt <= 0; 
 		end
 		
-		//100HZ
+		//30Hz
 		if (SW_1 && SW_2) begin
 			if (HZ_30_cnt == HZ_30) begin
 				HZ_30_cnt <= 0; 

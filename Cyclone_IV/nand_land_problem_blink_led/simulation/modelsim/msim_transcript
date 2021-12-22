@@ -1,0 +1,62 @@
+# Reading pref.tcl
+# do LED_blinker_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {LED_blinker.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:14:54 on Dec 21,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." LED_blinker.vo 
+# -- Compiling module LED_blinker
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	LED_blinker
+# End time: 13:14:54 on Dec 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led {C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/LED_blinker_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:14:54 on Dec 21,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led" C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/LED_blinker_tb.v 
+# -- Compiling module LED_blinker_tb
+# 
+# Top level modules:
+# 	LED_blinker_tb
+# End time: 13:14:54 on Dec 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  LED_blinker_tb
+# vsim -t 1ps -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" LED_blinker_tb 
+# Start time: 13:14:54 on Dec 21,2021
+# Loading work.LED_blinker_tb
+# Loading work.LED_blinker
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Test complete
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/simulation/modelsim/wave.do
+# Break key hit
+# Simulation stop requested.
+# End time: 14:11:37 on Dec 21,2021, Elapsed time: 0:56:43
+# Errors: 0, Warnings: 0

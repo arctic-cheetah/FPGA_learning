@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LED_blinker
-Mon Dec 20 02:57:51 2021
+Tue Dec 21 13:13:49 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 20 02:57:51 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 21 13:13:49 2021       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; LED_blinker                                 ;
 ; Top-level Entity Name              ; LED_blinker                                 ;
@@ -292,12 +292,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Dec 20 02:57:43 2021
+    Info: Processing started: Tue Dec 21 13:13:41 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LED_blinker -c LED_blinker
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file led_blinker.v
     Info (12023): Found entity 1: LED_blinker File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/LED_blinker.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file led_blinker_tb.v
+    Info (12023): Found entity 1: LED_blinker_tb File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/LED_blinker_tb.v Line: 3
 Info (12127): Elaborating entity "LED_blinker" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -308,8 +310,8 @@ Info (21057): Implemented 186 device resources after synthesis - the final resou
     Info (21061): Implemented 181 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4801 megabytes
-    Info: Processing ended: Mon Dec 20 02:57:51 2021
+    Info: Processing ended: Tue Dec 21 13:13:49 2021
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Total CPU time (on all processors): 00:00:19
 
 

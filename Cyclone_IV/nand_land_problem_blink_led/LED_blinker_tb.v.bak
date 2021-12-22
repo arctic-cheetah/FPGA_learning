@@ -1,0 +1,37 @@
+`include "LED_blinker.v"
+`timescale 1us/1ns
+
+module LED_blinker_tb;
+	reg t_clock    = 1'b0;
+	reg t_EN   = 1'b0;
+	reg t_SW_1 = 1'b0;
+	reg t_SW_2 = 1'b0;
+	
+	wire W_LED_DRIVE;
+	
+	LED_blinker (.LED(W_LED_DRIVE), .SW_1(t_SW_1), .SW_2(t_SW_2), .EN(t_EN), .clk(t_clock));
+	
+	always #20 t_clock <= !t_clock;
+	
+	initial begin
+		t_EN <= 1'b1;
+		t_SW_1 <= 1'b1;
+		t_SW_2 <= 1'b1;
+		#200000
+		
+		t_SW_1 <= 1'b1;
+		t_SW_2 <= 1'b0;
+		#200000
+		
+		t_SW_1 <= 1'b0;
+		t_SW_2 <= 1'b1;
+		#200000
+		
+		t_SW_1 <= 1'b0;
+		t_SW_2 <= 1'b0;
+		#200000
+		
+		$display("Test complete");
+	end
+
+endmodule

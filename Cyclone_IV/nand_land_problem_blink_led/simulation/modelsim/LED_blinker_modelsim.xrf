@@ -1,5 +1,6 @@
 vendor_name = ModelSim
 source_file = 1, C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/LED_blinker.v
+source_file = 1, C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/LED_blinker_tb.v
 source_file = 1, C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/db/LED_blinker.cbx.xml
 design_name = LED_blinker
 instance = comp, \LED~output , LED~output, LED_blinker, 1

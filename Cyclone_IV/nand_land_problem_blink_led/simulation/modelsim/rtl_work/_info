@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/simulation/modelsim
+vLED_blinker
+Z1 !s110 1640052526
+!i10b 1
+!s100 `>Y:_;fg=FnjzZ[HLa[ZR0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IRER17S[V`zJh7TMLTbnMR2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1640051334
+8C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/LED_blinker.v
+FC:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/LED_blinker.v
+!i122 0
+L0 5 76
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1640052525.000000
+!s107 C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/LED_blinker.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led|C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/LED_blinker.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led
+Z7 tCvgOpt 0
+n@l@e@d_blinker
+vLED_blinker_tb
+R1
+!i10b 1
+!s100 HPCUaJD1hAdS7eGNcX6hK1
+R2
+IMb@M^FS9]61bR<`Fc4?d01
+R3
+R0
+w1640052486
+8C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/LED_blinker_tb.v
+FC:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/LED_blinker_tb.v
+!i122 1
+L0 3 34
+R4
+r1
+!s85 0
+31
+!s108 1640052526.000000
+!s107 C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/LED_blinker_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led|C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/nand_land_problem_blink_led/LED_blinker_tb.v|
+!i113 1
+R5
+R6
+R7
+n@l@e@d_blinker_tb
