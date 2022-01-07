@@ -1,8 +1,5 @@
-|test
-
-
-|test|Timing:t
+|first_upload
 in => out.DATAIN
-out <= in.DB_MAX_OUTPUT_PORT_TYPE
+out << in.DB_MAX_OUTPUT_PORT_TYPE
 
 

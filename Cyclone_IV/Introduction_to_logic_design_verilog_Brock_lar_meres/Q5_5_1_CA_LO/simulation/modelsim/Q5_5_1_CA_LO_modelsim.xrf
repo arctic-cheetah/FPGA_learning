@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/Introduction_to_logic_design_verilog_Brock_lar_meres/Q5_5_1_CA_LO/Q5_5_1_CA_LO.v
+source_file = 1, C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/Introduction_to_logic_design_verilog_Brock_lar_meres/Q5_5_1_CA_LO/db/Q5_5_1_CA_LO.cbx.xml
+design_name = Q5_5_1_CA_LO
+instance = comp, \F~output , F~output, Q5_5_1_CA_LO, 1
+instance = comp, \A~input , A~input, Q5_5_1_CA_LO, 1
+instance = comp, \C~input , C~input, Q5_5_1_CA_LO, 1
+instance = comp, \F~0 , F~0, Q5_5_1_CA_LO, 1
+instance = comp, \B~input , B~input, Q5_5_1_CA_LO, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

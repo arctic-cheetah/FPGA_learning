@@ -1,0 +1,35 @@
+|decimal_to_bcd
+decimal[0] => ShiftLeft0.IN48
+decimal[1] => ShiftLeft0.IN47
+decimal[2] => ShiftLeft0.IN46
+decimal[3] => ShiftLeft0.IN45
+decimal[4] => ShiftLeft0.IN44
+decimal[5] => ShiftLeft0.IN43
+decimal[6] => ShiftLeft0.IN42
+decimal[7] => ShiftLeft0.IN41
+decimal[8] => ShiftLeft0.IN40
+decimal[9] => ShiftLeft0.IN39
+decimal[10] => ShiftLeft0.IN38
+decimal[11] => ShiftLeft0.IN37
+decimal[12] => ShiftLeft0.IN36
+decimal[13] => ShiftLeft0.IN35
+decimal[14] => ShiftLeft0.IN34
+decimal[15] => ShiftLeft0.IN33
+bcd[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+bcd[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+bcd[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+bcd[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+bcd[4] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+bcd[5] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+bcd[6] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+bcd[7] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+bcd[8] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+bcd[9] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+bcd[10] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+bcd[11] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+bcd[12] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+bcd[13] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[14] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[15] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+
+

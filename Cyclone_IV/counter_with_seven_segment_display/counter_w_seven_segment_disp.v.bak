@@ -1,0 +1,3 @@
+module counter_w_seven_segment_disp(input wire sw_add, sw_reset, output digit0, digit1, digit2, digit3);
+	
+endmodule;

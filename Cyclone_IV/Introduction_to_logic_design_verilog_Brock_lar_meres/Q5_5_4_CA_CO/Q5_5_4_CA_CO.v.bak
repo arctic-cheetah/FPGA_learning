@@ -1,0 +1,10 @@
+module Q5_5_4_CA_CO (input wire A, B, C, output wire F);
+	assign F = 
+	( 
+		(~A | ~B | ~C) ? 1'b1 :  
+		( A | ~B | ~C) ? 1'b1 :
+		( A |  B | ~C) ? 1'b1 :
+		( A | ~B |  C) ? 1'b1 :
+		( A |  B |  C) ? 1'b1 : 1'b0
+	);
+endmodule

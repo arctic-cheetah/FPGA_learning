@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at seven_segment_display.v(23): always construct contains both blocking and non-blocking assignments File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/seven_segment_display/seven_segment_display.v Line: 23

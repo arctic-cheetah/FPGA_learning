@@ -1,0 +1,8 @@
+//Converts decimals to bcd.
+//Returns a 16 bit bcd
+module decimal_to_bcd (input reg [15:0] decimal, output reg [15:0] bcd);
+	
+	//Find the index of the most siginificant bit (msb)
+	reg [15:0] msb_index = 16;
+
+endmodule

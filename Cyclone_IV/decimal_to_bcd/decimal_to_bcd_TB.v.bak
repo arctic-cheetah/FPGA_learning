@@ -1,0 +1,5 @@
+module decimal_to_bcd_TB ();
+	wire [15:0] dec = 15;
+	reg [15:0] bcd = 0;
+
+endmodule

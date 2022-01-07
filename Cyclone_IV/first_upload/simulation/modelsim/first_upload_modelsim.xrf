@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/first_upload/first_upload.v
+source_file = 1, C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/first_upload/test.v
+source_file = 1, C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/first_upload/db/first_upload.cbx.xml
+design_name = first_upload
+instance = comp, \out~output , out~output, first_upload, 1
+instance = comp, \in~input , in~input, first_upload, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

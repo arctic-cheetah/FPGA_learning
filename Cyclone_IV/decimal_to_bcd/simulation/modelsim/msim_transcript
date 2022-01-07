@@ -1,0 +1,50 @@
+# Reading pref.tcl
+# do decimal_to_bcd_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd {C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd/decimal_to_bcd.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:37:37 on Jan 08,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd" C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd/decimal_to_bcd.v 
+# -- Compiling module decimal_to_bcd
+# 
+# Top level modules:
+# 	decimal_to_bcd
+# End time: 03:37:37 on Jan 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd {C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd/decimal_to_bcd_TB.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:37:37 on Jan 08,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd" C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd/decimal_to_bcd_TB.v 
+# -- Compiling module decimal_to_bcd_TB
+# 
+# Top level modules:
+# 	decimal_to_bcd_TB
+# End time: 03:37:37 on Jan 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  decimal_to_bcd_TB
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" decimal_to_bcd_TB 
+# Start time: 03:37:38 on Jan 08,2022
+# Loading work.decimal_to_bcd_TB
+# Loading work.decimal_to_bcd
+# ** Warning: (vsim-3015) [PCDPC] - Port size (21) does not match connection size (16) for port 'bcd'. The port definition is at: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd/decimal_to_bcd.v(70).
+#    Time: 0 ps  Iteration: 0  Instance: /decimal_to_bcd_TB/DUT File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd/decimal_to_bcd_TB.v Line: 5
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# End time: 04:32:59 on Jan 08,2022, Elapsed time: 0:55:21
+# Errors: 0, Warnings: 1

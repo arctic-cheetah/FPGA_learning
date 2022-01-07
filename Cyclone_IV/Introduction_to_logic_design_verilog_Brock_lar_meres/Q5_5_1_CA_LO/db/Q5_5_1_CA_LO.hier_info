@@ -1,0 +1,16 @@
+|Q5_5_1_CA_LO
+A => m_1.IN0
+A => m_3.IN0
+A => m_4.IN0
+A => m_6.IN0
+B => m_3.IN1
+B => m_6.IN1
+B => m_1.IN1
+B => m_4.IN1
+C => m_4.IN1
+C => m_6.IN1
+C => m_1.IN1
+C => m_3.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+

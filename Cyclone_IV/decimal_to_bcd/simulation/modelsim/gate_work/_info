@@ -1,0 +1,84 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd/simulation/modelsim
+vdecimal_to_bcd
+Z1 !s110 1641572291
+!i10b 1
+!s100 77S:dRz`65`IkV6m<gaWa2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IdG8G5z6ijEh9?Uh33WZNI0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1641572225
+Z5 8decimal_to_bcd.vo
+Z6 Fdecimal_to_bcd.vo
+!i122 0
+L0 32 3082
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1641572291.000000
+Z9 !s107 decimal_to_bcd.vo|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|decimal_to_bcd.vo|
+!i113 1
+Z11 o-vlog01compat -work work
+Z12 !s92 -vlog01compat -work work +incdir+.
+Z13 tCvgOpt 0
+vdecimal_to_bcd_TB
+R1
+!i10b 1
+!s100 ]6kMaTSH4^o75SA8Nj><_2
+R2
+I4f3>K2:GK]H_T[5<5LW:k3
+R3
+R0
+w1641572205
+8C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd/decimal_to_bcd_TB.v
+FC:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd/decimal_to_bcd_TB.v
+!i122 1
+L0 1 16
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd/decimal_to_bcd_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd|C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd/decimal_to_bcd_TB.v|
+!i113 1
+R11
+!s92 -vlog01compat -work work +incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/decimal_to_bcd
+R13
+ndecimal_to_bcd_@t@b
+vhard_block
+R1
+!i10b 1
+!s100 PS5nKZZi`>2ndPFEi^<E60
+R2
+Ik=h^]GiT1mn2[Jje]TaCA1
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 3115 34
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13

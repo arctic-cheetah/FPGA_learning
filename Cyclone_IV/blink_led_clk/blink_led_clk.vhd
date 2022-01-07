@@ -10,7 +10,7 @@ entity blink_led_clk is
 		led3 : out std_logic;
 		led4 : out std_logic
 	);
-end blink_led_clk;
+end blink_led_clk;		
 
 architecture rtl of blink_led_clk is
 	signal state_LED: std_logic;

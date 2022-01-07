@@ -1,0 +1,103 @@
+//A program to count the number of times the switched was pressed.
+//by displaying it to a 7 segment display
+module counter_w_seven_segment_disp(input wire sw_add, sw_reset, output reg [6:0] seg, output reg [3:0] n_segment);
+	reg [15:0] decimal = 0;
+	reg [3:0] digit0, digit1, digit2, digit3;
+	reg [15:0] bcd = 0;
+	wire [6:0] seg0, seg1, seg2, seg3;
+	reg [3:0] neg_bcd;
+	
+	reg [15:0] msb_index;
+	reg [15:0] temp_dec;
+	reg [4:0] nibble;
+	
+	
+	assign seg0 = seg;
+	assign seg1 = seg;
+	assign seg2 = seg;
+	assign seg3 = seg;
+	
+//	seven_segment_display disp0 (.seg(seg0), .n_segment(n_segment[0]), .bcd(digit0));
+//	seven_segment_display disp1 (.seg(seg1), .n_segment(n_segment[1]), .bcd(digit1));
+//	seven_segment_display disp2 (.seg(seg2), .n_segment(n_segment[2]), .bcd(digit2));
+//	seven_segment_display disp3 (.seg(seg3), .n_segment(n_segment[3]), .bcd(digit3));
+	
+	
+	//Increment if the sw_add is pressed
+	always @(sw_add) begin 
+		decimal = decimal + 1;
+		
+		//Convert to bcd
+		//Find the index of the most siginificant bit (msb)
+		for (msb_index = 16 ;msb_index > 0 && ((1 << msb_index) & decimal) != 1; msb_index = msb_index - 1) begin
+		end
+		
+		//Prepare the decimal for bcd conversion
+		temp_dec = decimal << (16 - msb_index);
+		nibble = 0;
+		
+		for (msb_index = msb_index; msb_index > 0; msb_index = msb_index - 1) begin 
+		
+			//Check if any of output's nibbles are greater than 4
+			nibble = temp_dec & 16'h000F;
+			if (nibble > 4) begin 
+				bcd = bcd + 16'h0003;
+			end
+			
+			nibble = (temp_dec & 16'h00F0) >> 4;
+			if (nibble > 4) begin 
+				bcd = bcd + 16'h0030;
+			end
+			
+			nibble = (temp_dec & 16'h0F00) >> 4;
+			if (nibble > 4) begin 
+				bcd = bcd + 16'h0300;
+			end
+			
+			nibble = (temp_dec & 16'hF000) >> 4;
+			if (nibble > 4) begin 
+				bcd = bcd + 16'h3000;
+			end
+			
+			bcd = bcd << 1;
+			bcd = bcd | ((16'h8000 & temp_dec) >> 15) ;
+			temp_dec = temp_dec << 1;
+			
+		end
+		
+		//Update the display
+		//Send digit0
+		digit0 = bcd[3:0];
+		n_segment[0] = 0;
+		
+		//Sw is pullup high, therefore negate it
+		neg_bcd = ~digit0;
+		//Seven segment display is pulled up. Therefore this also needs to be negated
+			case (neg_bcd)
+			
+				0 : seg = ~7'b1111110;
+				1 : seg = ~7'b0000110;
+				2 : seg = ~7'b1101101;
+				3 : seg = ~7'b1111001;
+				4 : seg = ~7'b0110011;
+				5 : seg = ~7'b1011011;
+				6 : seg = ~7'b1011111;
+				7 : seg = ~7'b1110000;
+				8 : seg = ~7'b1111111;
+				9 : seg = ~7'b1110011;
+				default : seg = ~7'b0000000;
+			endcase
+		
+		//Send digit1
+//		digit1 = bcd[7:4];
+//		//etc
+//		digit2 = bcd[11:8];
+//		digit3 = bcd[15:12];
+	end
+	
+	always @(sw_reset) begin
+		decimal = 0;
+		//Clear the display to zero
+	end
+	//
+endmodule
