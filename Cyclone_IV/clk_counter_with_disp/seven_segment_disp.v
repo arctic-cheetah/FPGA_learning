@@ -18,6 +18,13 @@ module seven_segment_disp (output reg [6:0]seg, output wire n_segment, input wir
 			7 : seg = ~7'b1110000;
 			8 : seg = ~7'b1111111;
 			9 : seg = ~7'b1110011;
+			10 : seg = ~7'b1110111;
+			11 : seg = ~7'b0011111;
+			12 : seg = ~7'b1001110;
+			13 : seg = ~7'b0111101;
+			14 : seg = ~7'b1001111;
+			15 : seg = ~7'b1000111;
+			
 			default : seg = ~7'b0000000;
 		endcase
 	end

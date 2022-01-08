@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at clk_counter_with_disp.v(13): always construct contains both blocking and non-blocking assignments File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/clk_counter_with_disp.v Line: 13

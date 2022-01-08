@@ -1,0 +1,83 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/simulation/modelsim
+vclc_counter_tb
+Z1 !s110 1641621188
+!i10b 1
+!s100 7Ud0c0Pe[mmOmQKezYadT0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IRao5QWjblNMGc9TZl:JK[2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1641621110
+8C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/clc_counter_tb.v
+FC:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/clc_counter_tb.v
+!i122 2
+L0 2 16
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1641621188.000000
+!s107 C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/clc_counter_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp|C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/clc_counter_tb.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp
+Z8 tCvgOpt 0
+vclk_counter_with_disp
+R1
+!i10b 1
+!s100 I0UOZ:d@HVn2h:eoS[nH`0
+R2
+I:?4@kF3Pze5K<U=mnhWWW1
+R3
+R0
+w1641619706
+8C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/clk_counter_with_disp.v
+FC:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/clk_counter_with_disp.v
+!i122 0
+L0 2 27
+R4
+r1
+!s85 0
+31
+!s108 1641621187.000000
+!s107 C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/clk_counter_with_disp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp|C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/clk_counter_with_disp.v|
+!i113 1
+R6
+R7
+R8
+vseven_segment_disp
+R1
+!i10b 1
+!s100 BCIlLR_7>k3RiZ0QX5Jzm0
+R2
+IO;b;0zAVeLleP13VoleL63
+R3
+R0
+w1641619571
+8C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/seven_segment_disp.v
+FC:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/seven_segment_disp.v
+!i122 1
+L0 1 28
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/seven_segment_disp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp|C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/seven_segment_disp.v|
+!i113 1
+R6
+R7
+R8

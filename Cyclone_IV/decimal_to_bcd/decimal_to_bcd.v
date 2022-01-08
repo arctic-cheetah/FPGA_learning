@@ -2,8 +2,7 @@
 //Converts decimals to bcd.
 //Returns a 16 bit bcd
 //Does not work because synthesiser is removing all the logic
-module decimal_to_bcd (input wire [15:0] decimal, output reg [15:0] bcd);
-	
+ 	
 	//Find the index of the most siginificant bit (msb)
 	integer msb_index;
 	reg [15:0] temp_dec;
@@ -11,7 +10,7 @@ module decimal_to_bcd (input wire [15:0] decimal, output reg [15:0] bcd);
 	integer i = 0;
 	
 	
-	always @ (decimal) begin
+	always @ (decimal, clk) begin
 	
 		//set bcd to zero 
 		for (i = 0; i < 16; i = i + 1) bcd[i] = 0;
@@ -34,20 +33,7 @@ module decimal_to_bcd (input wire [15:0] decimal, output reg [15:0] bcd);
 			if (nibble > 4) begin 
 				bcd = bcd + 16'h0030;
 			end
-			
-			nibble = (temp_dec & 16'h0F00) >> 8;
-			if (nibble > 4) begin 
-				bcd = bcd + 16'h0300;
-			end
-			
-			nibble = (temp_dec & 16'hF000) >> 12;
-			if (nibble > 4) begin 
-				bcd = bcd + 16'h3000;
-			end
-			
-			bcd = bcd << 1;
-			bcd = bcd | ((16'h8000 & temp_dec) >> 15) ;
-			temp_dec = temp_dec << 1;
+
 			
 		end
 		

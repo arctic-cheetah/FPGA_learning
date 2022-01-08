@@ -1,4 +1,4 @@
-Fitter Status : Successful - Sat Jan 08 05:23:30 2022
+Fitter Status : Successful - Sat Jan 08 10:48:27 2022
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : decimal_to_bcd
 Top-level Entity Name : decimal_to_bcd
@@ -9,7 +9,7 @@ Total logic elements : 0 / 6,272 ( 0 % )
     Total combinational functions : 0 / 6,272 ( 0 % )
     Dedicated logic registers : 0 / 6,272 ( 0 % )
 Total registers : 0
-Total pins : 32 / 92 ( 35 % )
+Total pins : 33 / 92 ( 36 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )

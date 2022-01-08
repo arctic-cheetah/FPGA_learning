@@ -1,5 +1,5 @@
 Analysis & Synthesis report for clk_counter_with_disp
-Sat Jan 08 14:34:30 2022
+Sat Jan 08 17:05:29 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,9 +14,10 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Inverted Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -43,7 +44,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jan 08 14:34:30 2022       ;
+; Analysis & Synthesis Status        ; Successful - Sat Jan 08 17:05:29 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; clk_counter_with_disp                       ;
 ; Top-level Entity Name              ; clk_counter_with_disp                       ;
@@ -155,15 +156,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -235,6 +236,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; count[0]                               ; 11      ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -243,12 +254,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; boundary_port         ; 9                           ;
 ; cycloneiii_ff         ; 36                          ;
 ;     plain             ; 36                          ;
-; cycloneiii_lcell_comb ; 76                          ;
+; cycloneiii_lcell_comb ; 72                          ;
 ;     arith             ; 31                          ;
 ;         2 data inputs ; 31                          ;
-;     normal            ; 45                          ;
+;     normal            ; 41                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 8                           ;
+;         1 data inputs ; 4                           ;
 ;         2 data inputs ; 16                          ;
 ;         3 data inputs ; 1                           ;
 ;         4 data inputs ; 19                          ;
@@ -273,14 +284,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Jan 08 14:34:19 2022
+    Info: Processing started: Sat Jan 08 17:05:20 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off clk_counter_with_disp -c clk_counter_with_disp
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file clk_counter_with_disp.v
     Info (12023): Found entity 1: clk_counter_with_disp File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/clk_counter_with_disp.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file seven_segment_disp.v
     Info (12023): Found entity 1: seven_segment_disp File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/seven_segment_disp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clc_counter_tb.v
+    Info (12023): Found entity 1: clc_counter_tb File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/clc_counter_tb.v Line: 2
 Info (12127): Elaborating entity "clk_counter_with_disp" for the top level hierarchy
 Warning (10230): Verilog HDL assignment warning at clk_counter_with_disp.v(17): truncated value with size 32 to match size of target (4) File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/clk_counter_with_disp.v Line: 17
 Info (12128): Elaborating entity "seven_segment_disp" for hierarchy "seven_segment_disp:U0" File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_with_disp/clk_counter_with_disp.v Line: 11
@@ -294,9 +307,9 @@ Info (21057): Implemented 77 device resources after synthesis - the final resour
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 68 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4768 megabytes
-    Info: Processing ended: Sat Jan 08 14:34:30 2022
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 4801 megabytes
+    Info: Processing ended: Sat Jan 08 17:05:29 2022
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:19
 
 

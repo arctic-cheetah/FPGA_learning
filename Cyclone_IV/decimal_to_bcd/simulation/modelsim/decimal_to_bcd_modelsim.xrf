@@ -19,6 +19,7 @@ instance = comp, \bcd[12]~output , bcd[12]~output, decimal_to_bcd, 1
 instance = comp, \bcd[13]~output , bcd[13]~output, decimal_to_bcd, 1
 instance = comp, \bcd[14]~output , bcd[14]~output, decimal_to_bcd, 1
 instance = comp, \bcd[15]~output , bcd[15]~output, decimal_to_bcd, 1
+instance = comp, \clk~input , clk~input, decimal_to_bcd, 1
 instance = comp, \decimal[15]~input , decimal[15]~input, decimal_to_bcd, 1
 instance = comp, \decimal[14]~input , decimal[14]~input, decimal_to_bcd, 1
 instance = comp, \decimal[13]~input , decimal[13]~input, decimal_to_bcd, 1

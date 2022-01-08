@@ -1,5 +1,5 @@
 Assembler report for decimal_to_bcd
-Sat Jan 08 05:23:32 2022
+Sat Jan 08 10:48:31 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Jan 08 05:23:32 2022 ;
+; Assembler Status      ; Successful - Sat Jan 08 10:48:31 2022 ;
 ; Revision Name         ; decimal_to_bcd                        ;
 ; Top-level Entity Name ; decimal_to_bcd                        ;
 ; Family                ; Cyclone IV E                          ;
@@ -67,8 +67,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------+---------------------------------------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                                             ;
 +----------------+---------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00093702                                                                                                          ;
-; Checksum       ; 0x00093702                                                                                                          ;
+; JTAG usercode  ; 0x000937BD                                                                                                          ;
+; Checksum       ; 0x000937BD                                                                                                          ;
 +----------------+---------------------------------------------------------------------------------------------------------------------+
 
 
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Jan 08 05:23:31 2022
+    Info: Processing started: Sat Jan 08 10:48:30 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off decimal_to_bcd -c decimal_to_bcd
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4682 megabytes
-    Info: Processing ended: Sat Jan 08 05:23:32 2022
+    Info: Processing ended: Sat Jan 08 10:48:31 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
