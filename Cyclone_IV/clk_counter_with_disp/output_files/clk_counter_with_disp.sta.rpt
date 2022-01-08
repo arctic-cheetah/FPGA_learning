@@ -1,5 +1,5 @@
 Timing Analyzer report for clk_counter_with_disp
-Sat Jan 08 17:05:38 2022
+Sat Jan 08 22:11:49 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -94,15 +94,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
-; Maximum used               ; 8           ;
+; Average used               ; 1.02        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.5%      ;
+;     Processors 2-4         ;   0.6%      ;
 +----------------------------+-------------+
 
 
@@ -120,7 +120,7 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 238.04 MHz ; 238.04 MHz      ; clk        ;      ;
+; 186.57 MHz ; 186.57 MHz      ; clk        ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -136,7 +136,7 @@ HTML report is unavailable in plain text report export.
 +-------+--------+--------------------+
 ; Clock ; Slack  ; End Point TNS      ;
 +-------+--------+--------------------+
-; clk   ; -3.201 ; -87.983            ;
+; clk   ; -4.360 ; -130.645           ;
 +-------+--------+--------------------+
 
 
@@ -145,7 +145,7 @@ HTML report is unavailable in plain text report export.
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; clk   ; 0.433 ; 0.000              ;
+; clk   ; 0.452 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -175,106 +175,106 @@ No paths to report.
 +--------+----------------+----------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node      ; To Node        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+----------------+----------------+--------------+-------------+--------------+------------+------------+
-; -3.201 ; wave_count[15] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.081     ; 4.121      ;
-; -3.192 ; wave_count[9]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.081     ; 4.112      ;
-; -3.189 ; wave_count[17] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 4.120      ;
-; -3.177 ; wave_count[1]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; 0.395      ; 4.573      ;
-; -3.162 ; wave_count[29] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 4.093      ;
-; -3.151 ; wave_count[28] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 4.082      ;
-; -3.149 ; wave_count[1]  ; wave_count[22] ; clk          ; clk         ; 1.000        ; 0.395      ; 4.545      ;
-; -3.129 ; wave_count[0]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.039      ;
-; -3.119 ; wave_count[20] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.071     ; 4.049      ;
-; -3.102 ; wave_count[19] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.576     ; 3.527      ;
-; -3.100 ; wave_count[15] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.090     ; 4.011      ;
-; -3.100 ; wave_count[15] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.090     ; 4.011      ;
-; -3.099 ; wave_count[1]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.009      ;
-; -3.094 ; wave_count[31] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 4.025      ;
-; -3.089 ; wave_count[0]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; 0.395      ; 4.485      ;
-; -3.070 ; wave_count[4]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.081     ; 3.990      ;
-; -3.069 ; wave_count[1]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.091     ; 3.979      ;
-; -3.061 ; wave_count[0]  ; wave_count[22] ; clk          ; clk         ; 1.000        ; 0.395      ; 4.457      ;
-; -3.057 ; wave_count[26] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 3.988      ;
-; -3.056 ; wave_count[1]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.080     ; 3.977      ;
-; -3.047 ; wave_count[5]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.081     ; 3.967      ;
-; -3.042 ; wave_count[0]  ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.090     ; 3.953      ;
-; -3.037 ; wave_count[1]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.081     ; 3.957      ;
-; -3.035 ; wave_count[1]  ; wave_count[18] ; clk          ; clk         ; 1.000        ; 0.395      ; 4.431      ;
-; -3.032 ; wave_count[13] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.099     ; 3.934      ;
-; -3.029 ; wave_count[3]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; 0.395      ; 4.425      ;
-; -3.025 ; wave_count[0]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.081     ; 3.945      ;
-; -3.024 ; wave_count[12] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.099     ; 3.926      ;
-; -3.017 ; wave_count[29] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.079     ; 3.939      ;
-; -3.017 ; wave_count[29] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.079     ; 3.939      ;
-; -3.015 ; wave_count[18] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.576     ; 3.440      ;
-; -3.011 ; wave_count[0]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.091     ; 3.921      ;
-; -3.004 ; wave_count[0]  ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.063     ; 3.942      ;
-; -3.001 ; wave_count[3]  ; wave_count[22] ; clk          ; clk         ; 1.000        ; 0.395      ; 4.397      ;
-; -2.995 ; wave_count[28] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.079     ; 3.917      ;
-; -2.995 ; wave_count[28] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.079     ; 3.917      ;
-; -2.986 ; wave_count[2]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.091     ; 3.896      ;
-; -2.983 ; wave_count[0]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.091     ; 3.893      ;
-; -2.977 ; wave_count[1]  ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.090     ; 3.888      ;
-; -2.974 ; wave_count[3]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.081     ; 3.894      ;
-; -2.970 ; wave_count[17] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.079     ; 3.892      ;
-; -2.970 ; wave_count[17] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.079     ; 3.892      ;
-; -2.968 ; wave_count[0]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.080     ; 3.889      ;
-; -2.966 ; wave_count[31] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.079     ; 3.888      ;
-; -2.966 ; wave_count[31] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.079     ; 3.888      ;
-; -2.962 ; wave_count[15] ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.063     ; 3.900      ;
-; -2.961 ; wave_count[15] ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.063     ; 3.899      ;
-; -2.961 ; wave_count[15] ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.063     ; 3.899      ;
-; -2.957 ; wave_count[9]  ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.090     ; 3.868      ;
-; -2.957 ; wave_count[9]  ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.090     ; 3.868      ;
-; -2.953 ; wave_count[1]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.091     ; 3.863      ;
-; -2.951 ; wave_count[3]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.091     ; 3.861      ;
-; -2.947 ; wave_count[0]  ; wave_count[18] ; clk          ; clk         ; 1.000        ; 0.395      ; 4.343      ;
-; -2.945 ; wave_count[27] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 3.876      ;
-; -2.941 ; wave_count[1]  ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.063     ; 3.879      ;
-; -2.935 ; wave_count[21] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.071     ; 3.865      ;
-; -2.934 ; wave_count[1]  ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.090     ; 3.845      ;
-; -2.933 ; wave_count[2]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; 0.395      ; 4.329      ;
-; -2.923 ; wave_count[1]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.091     ; 3.833      ;
-; -2.921 ; wave_count[3]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.091     ; 3.831      ;
-; -2.921 ; wave_count[24] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.576     ; 3.346      ;
-; -2.915 ; wave_count[18] ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.586     ; 3.330      ;
-; -2.912 ; wave_count[20] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.080     ; 3.833      ;
-; -2.912 ; wave_count[20] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.080     ; 3.833      ;
-; -2.908 ; wave_count[15] ; count[3]       ; clk          ; clk         ; 1.000        ; 0.411      ; 4.320      ;
-; -2.908 ; wave_count[3]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.080     ; 3.829      ;
-; -2.907 ; wave_count[6]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.092     ; 3.816      ;
-; -2.905 ; wave_count[2]  ; wave_count[22] ; clk          ; clk         ; 1.000        ; 0.395      ; 4.301      ;
-; -2.902 ; wave_count[19] ; wave_count[24] ; clk          ; clk         ; 1.000        ; -0.100     ; 3.803      ;
-; -2.899 ; wave_count[2]  ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.090     ; 3.810      ;
-; -2.896 ; wave_count[1]  ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.063     ; 3.834      ;
-; -2.889 ; wave_count[0]  ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.090     ; 3.800      ;
-; -2.887 ; wave_count[3]  ; wave_count[18] ; clk          ; clk         ; 1.000        ; 0.395      ; 4.283      ;
-; -2.883 ; wave_count[5]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; 0.395      ; 4.279      ;
-; -2.879 ; wave_count[29] ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.052     ; 3.828      ;
-; -2.878 ; wave_count[19] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.585     ; 3.294      ;
-; -2.878 ; wave_count[19] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.585     ; 3.294      ;
-; -2.878 ; wave_count[29] ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.052     ; 3.827      ;
-; -2.878 ; wave_count[29] ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.052     ; 3.827      ;
-; -2.874 ; wave_count[19] ; wave_count[22] ; clk          ; clk         ; 1.000        ; -0.100     ; 3.775      ;
-; -2.868 ; wave_count[12] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.108     ; 3.761      ;
-; -2.868 ; wave_count[12] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.108     ; 3.761      ;
-; -2.867 ; wave_count[13] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.108     ; 3.760      ;
-; -2.867 ; wave_count[13] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.108     ; 3.760      ;
-; -2.865 ; wave_count[0]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.091     ; 3.775      ;
-; -2.861 ; wave_count[2]  ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.063     ; 3.799      ;
-; -2.857 ; wave_count[28] ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.052     ; 3.806      ;
-; -2.856 ; wave_count[28] ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.052     ; 3.805      ;
-; -2.856 ; wave_count[28] ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.052     ; 3.805      ;
-; -2.855 ; wave_count[5]  ; wave_count[22] ; clk          ; clk         ; 1.000        ; 0.395      ; 4.251      ;
-; -2.855 ; wave_count[2]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.091     ; 3.765      ;
-; -2.853 ; wave_count[0]  ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.063     ; 3.791      ;
-; -2.849 ; wave_count[1]  ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.063     ; 3.787      ;
-; -2.840 ; wave_count[4]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.091     ; 3.750      ;
-; -2.840 ; wave_count[2]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.091     ; 3.750      ;
-; -2.837 ; wave_count[0]  ; wave_count[27] ; clk          ; clk         ; 1.000        ; -0.091     ; 3.747      ;
-; -2.832 ; wave_count[17] ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.052     ; 3.781      ;
-; -2.831 ; wave_count[5]  ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.090     ; 3.742      ;
-; -2.831 ; wave_count[5]  ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.090     ; 3.742      ;
-; -2.831 ; wave_count[17] ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.052     ; 3.780      ;
+; -4.360 ; wave_count[4]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.099     ; 5.262      ;
+; -4.279 ; wave_count[7]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.077     ; 5.203      ;
+; -4.264 ; wave_count[6]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.099     ; 5.166      ;
+; -4.249 ; wave_count[1]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.078     ; 5.172      ;
+; -4.221 ; wave_count[5]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.099     ; 5.123      ;
+; -4.188 ; wave_count[2]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.078     ; 5.111      ;
+; -4.141 ; wave_count[0]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.081     ; 5.061      ;
+; -4.136 ; wave_count[4]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.077     ; 5.060      ;
+; -4.133 ; wave_count[3]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.078     ; 5.056      ;
+; -4.113 ; wave_count[5]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.077     ; 5.037      ;
+; -4.109 ; wave_count[4]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.099     ; 5.011      ;
+; -4.104 ; wave_count[14] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.056     ; 5.049      ;
+; -4.096 ; wave_count[12] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.056     ; 5.041      ;
+; -4.089 ; wave_count[1]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.078     ; 5.012      ;
+; -4.084 ; wave_count[0]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.103     ; 4.982      ;
+; -4.045 ; wave_count[5]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.099     ; 4.947      ;
+; -4.033 ; wave_count[17] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.077     ; 4.957      ;
+; -4.029 ; wave_count[7]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.099     ; 4.931      ;
+; -4.018 ; wave_count[1]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.060     ; 4.959      ;
+; -4.013 ; wave_count[6]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.099     ; 4.915      ;
+; -3.991 ; wave_count[1]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.078     ; 4.914      ;
+; -3.974 ; wave_count[5]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.894      ;
+; -3.973 ; wave_count[3]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.078     ; 4.896      ;
+; -3.970 ; wave_count[5]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.099     ; 4.872      ;
+; -3.963 ; wave_count[7]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.085     ; 4.879      ;
+; -3.951 ; wave_count[15] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.056     ; 4.896      ;
+; -3.946 ; wave_count[1]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.078     ; 4.869      ;
+; -3.946 ; wave_count[19] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.077     ; 4.870      ;
+; -3.941 ; wave_count[4]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.099     ; 4.843      ;
+; -3.937 ; wave_count[2]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.078     ; 4.860      ;
+; -3.932 ; wave_count[9]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.056     ; 4.877      ;
+; -3.902 ; wave_count[3]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.060     ; 4.843      ;
+; -3.902 ; wave_count[5]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.099     ; 4.804      ;
+; -3.875 ; wave_count[3]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.078     ; 4.798      ;
+; -3.870 ; wave_count[4]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.790      ;
+; -3.869 ; wave_count[7]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.099     ; 4.771      ;
+; -3.851 ; wave_count[18] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.077     ; 4.775      ;
+; -3.840 ; wave_count[11] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.056     ; 4.785      ;
+; -3.835 ; wave_count[2]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.056     ; 4.780      ;
+; -3.833 ; wave_count[2]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.078     ; 4.756      ;
+; -3.833 ; wave_count[0]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.103     ; 4.731      ;
+; -3.830 ; wave_count[3]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.078     ; 4.753      ;
+; -3.829 ; wave_count[6]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.099     ; 4.731      ;
+; -3.820 ; wave_count[4]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.085     ; 4.736      ;
+; -3.813 ; wave_count[0]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.089     ; 4.725      ;
+; -3.798 ; wave_count[7]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.718      ;
+; -3.798 ; wave_count[4]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.099     ; 4.700      ;
+; -3.797 ; wave_count[5]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.085     ; 4.713      ;
+; -3.792 ; wave_count[25] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.077     ; 4.716      ;
+; -3.792 ; wave_count[13] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.056     ; 4.737      ;
+; -3.780 ; wave_count[6]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.077     ; 4.704      ;
+; -3.780 ; wave_count[1]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.056     ; 4.725      ;
+; -3.775 ; wave_count[7]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.099     ; 4.677      ;
+; -3.772 ; wave_count[8]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.078     ; 4.695      ;
+; -3.767 ; wave_count[14] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.064     ; 4.704      ;
+; -3.765 ; wave_count[4]  ; wave_count[27] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.685      ;
+; -3.762 ; wave_count[2]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.060     ; 4.703      ;
+; -3.759 ; wave_count[12] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.064     ; 4.696      ;
+; -3.758 ; wave_count[24] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.077     ; 4.682      ;
+; -3.751 ; wave_count[6]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.671      ;
+; -3.749 ; wave_count[7]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.669      ;
+; -3.747 ; wave_count[0]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.103     ; 4.645      ;
+; -3.742 ; wave_count[7]  ; wave_count[5]  ; clk          ; clk         ; 1.000        ; -0.081     ; 4.662      ;
+; -3.740 ; wave_count[7]  ; wave_count[7]  ; clk          ; clk         ; 1.000        ; -0.081     ; 4.660      ;
+; -3.738 ; wave_count[7]  ; wave_count[4]  ; clk          ; clk         ; 1.000        ; -0.081     ; 4.658      ;
+; -3.737 ; wave_count[7]  ; wave_count[6]  ; clk          ; clk         ; 1.000        ; -0.081     ; 4.657      ;
+; -3.726 ; wave_count[7]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.099     ; 4.628      ;
+; -3.717 ; wave_count[17] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.085     ; 4.633      ;
+; -3.697 ; wave_count[10] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.056     ; 4.642      ;
+; -3.693 ; wave_count[9]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.078     ; 4.616      ;
+; -3.690 ; wave_count[2]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.078     ; 4.613      ;
+; -3.687 ; wave_count[6]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.099     ; 4.589      ;
+; -3.677 ; wave_count[10] ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.078     ; 4.600      ;
+; -3.676 ; wave_count[0]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.085     ; 4.592      ;
+; -3.669 ; wave_count[6]  ; wave_count[27] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.589      ;
+; -3.667 ; wave_count[16] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.077     ; 4.591      ;
+; -3.651 ; wave_count[7]  ; wave_count[27] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.571      ;
+; -3.650 ; wave_count[7]  ; wave_count[25] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.570      ;
+; -3.648 ; wave_count[7]  ; wave_count[17] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.568      ;
+; -3.648 ; wave_count[20] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.058     ; 4.591      ;
+; -3.646 ; wave_count[7]  ; wave_count[19] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.566      ;
+; -3.645 ; wave_count[7]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.565      ;
+; -3.644 ; wave_count[7]  ; wave_count[18] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.564      ;
+; -3.635 ; wave_count[15] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.064     ; 4.572      ;
+; -3.634 ; wave_count[1]  ; wave_count[27] ; clk          ; clk         ; 1.000        ; -0.060     ; 4.575      ;
+; -3.628 ; wave_count[7]  ; count[2]       ; clk          ; clk         ; 1.000        ; -0.085     ; 4.544      ;
+; -3.627 ; wave_count[7]  ; count[0]       ; clk          ; clk         ; 1.000        ; -0.085     ; 4.543      ;
+; -3.626 ; wave_count[5]  ; wave_count[27] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.546      ;
+; -3.624 ; wave_count[7]  ; count[3]       ; clk          ; clk         ; 1.000        ; -0.085     ; 4.540      ;
+; -3.619 ; wave_count[4]  ; wave_count[25] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.539      ;
+; -3.617 ; wave_count[19] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.085     ; 4.533      ;
+; -3.616 ; wave_count[9]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.064     ; 4.553      ;
+; -3.606 ; wave_count[4]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.526      ;
+; -3.604 ; wave_count[0]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.103     ; 4.502      ;
+; -3.599 ; wave_count[0]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.085     ; 4.515      ;
+; -3.599 ; wave_count[4]  ; wave_count[5]  ; clk          ; clk         ; 1.000        ; -0.081     ; 4.519      ;
+; -3.597 ; wave_count[4]  ; wave_count[7]  ; clk          ; clk         ; 1.000        ; -0.081     ; 4.517      ;
+; -3.595 ; wave_count[4]  ; wave_count[4]  ; clk          ; clk         ; 1.000        ; -0.081     ; 4.515      ;
+; -3.594 ; wave_count[4]  ; wave_count[6]  ; clk          ; clk         ; 1.000        ; -0.081     ; 4.514      ;
+; -3.593 ; wave_count[2]  ; wave_count[27] ; clk          ; clk         ; 1.000        ; -0.060     ; 4.534      ;
 +--------+----------------+----------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -283,106 +283,106 @@ No paths to report.
 +-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node      ; To Node        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
-; 0.433 ; count[3]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.101      ; 0.746      ;
-; 0.433 ; count[2]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.101      ; 0.746      ;
-; 0.433 ; count[1]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.101      ; 0.746      ;
-; 0.433 ; count[0]       ; count[0]       ; clk          ; clk         ; 0.000        ; 0.101      ; 0.746      ;
-; 0.760 ; wave_count[15] ; wave_count[15] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.053      ;
-; 0.760 ; wave_count[3]  ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.053      ;
-; 0.761 ; wave_count[5]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.054      ;
-; 0.761 ; wave_count[1]  ; wave_count[1]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.054      ;
-; 0.762 ; wave_count[17] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.054      ;
-; 0.762 ; wave_count[9]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.055      ;
-; 0.763 ; wave_count[29] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.055      ;
-; 0.763 ; wave_count[27] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.055      ;
-; 0.763 ; wave_count[7]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.056      ;
-; 0.763 ; wave_count[2]  ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.056      ;
-; 0.764 ; wave_count[23] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.056      ;
-; 0.764 ; wave_count[31] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.056      ;
-; 0.764 ; wave_count[10] ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.057      ;
-; 0.764 ; wave_count[4]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.057      ;
-; 0.765 ; wave_count[25] ; wave_count[25] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.057      ;
-; 0.765 ; wave_count[8]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.058      ;
-; 0.766 ; wave_count[30] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.058      ;
-; 0.767 ; wave_count[28] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.059      ;
-; 0.767 ; wave_count[26] ; wave_count[26] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.059      ;
-; 0.799 ; count[0]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.101      ; 1.112      ;
-; 0.801 ; count[1]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.101      ; 1.114      ;
-; 0.801 ; count[0]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.101      ; 1.114      ;
-; 1.053 ; count[0]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.101      ; 1.366      ;
-; 1.115 ; wave_count[1]  ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.408      ;
-; 1.115 ; wave_count[3]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.408      ;
-; 1.116 ; wave_count[9]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.409      ;
-; 1.117 ; wave_count[7]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.410      ;
-; 1.118 ; wave_count[29] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.410      ;
-; 1.118 ; wave_count[27] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.410      ;
-; 1.119 ; wave_count[25] ; wave_count[26] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.411      ;
-; 1.124 ; wave_count[2]  ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.417      ;
-; 1.124 ; wave_count[0]  ; wave_count[1]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.417      ;
-; 1.125 ; wave_count[4]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.418      ;
-; 1.126 ; wave_count[8]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.419      ;
-; 1.127 ; wave_count[30] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.419      ;
-; 1.128 ; wave_count[28] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.420      ;
-; 1.128 ; wave_count[26] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.420      ;
-; 1.133 ; wave_count[0]  ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.426      ;
-; 1.133 ; wave_count[2]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.426      ;
-; 1.135 ; wave_count[8]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.428      ;
-; 1.137 ; wave_count[28] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.429      ;
-; 1.137 ; wave_count[26] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.429      ;
-; 1.161 ; count[2]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.101      ; 1.474      ;
-; 1.173 ; count[1]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.101      ; 1.486      ;
-; 1.246 ; wave_count[1]  ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.539      ;
-; 1.246 ; wave_count[3]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.539      ;
-; 1.247 ; wave_count[5]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.540      ;
-; 1.248 ; wave_count[7]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.541      ;
-; 1.249 ; wave_count[23] ; wave_count[25] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.541      ;
-; 1.249 ; wave_count[29] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.541      ;
-; 1.249 ; wave_count[27] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.541      ;
-; 1.250 ; wave_count[25] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.542      ;
-; 1.255 ; wave_count[1]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.548      ;
-; 1.256 ; wave_count[5]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.549      ;
-; 1.257 ; wave_count[15] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.070      ; 1.539      ;
-; 1.257 ; wave_count[7]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.550      ;
-; 1.258 ; wave_count[23] ; wave_count[26] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.550      ;
-; 1.258 ; wave_count[27] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.550      ;
-; 1.259 ; wave_count[25] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.551      ;
-; 1.264 ; wave_count[0]  ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.557      ;
-; 1.264 ; wave_count[2]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.557      ;
-; 1.265 ; wave_count[4]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.558      ;
-; 1.268 ; wave_count[28] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.560      ;
-; 1.268 ; wave_count[26] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.560      ;
-; 1.273 ; wave_count[0]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.566      ;
-; 1.274 ; wave_count[4]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.567      ;
-; 1.277 ; wave_count[26] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.569      ;
-; 1.318 ; wave_count[6]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.080      ; 1.610      ;
-; 1.340 ; wave_count[6]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.080      ; 1.632      ;
-; 1.386 ; wave_count[1]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.679      ;
-; 1.386 ; wave_count[3]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.679      ;
-; 1.387 ; wave_count[5]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.680      ;
-; 1.389 ; wave_count[23] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.681      ;
-; 1.389 ; wave_count[27] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.681      ;
-; 1.390 ; wave_count[25] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.682      ;
-; 1.395 ; wave_count[3]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.688      ;
-; 1.396 ; wave_count[5]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.689      ;
-; 1.398 ; wave_count[23] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.690      ;
-; 1.399 ; wave_count[25] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.691      ;
-; 1.404 ; wave_count[0]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.697      ;
-; 1.404 ; wave_count[2]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.697      ;
-; 1.405 ; wave_count[10] ; wave_count[15] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.698      ;
-; 1.405 ; wave_count[4]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.698      ;
-; 1.408 ; wave_count[26] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.700      ;
-; 1.411 ; wave_count[14] ; wave_count[15] ; clk          ; clk         ; 0.000        ; 0.063      ; 1.686      ;
-; 1.413 ; wave_count[2]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.706      ;
-; 1.414 ; wave_count[21] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.079      ; 1.705      ;
-; 1.414 ; wave_count[4]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.707      ;
-; 1.452 ; wave_count[16] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.575      ; 2.239      ;
-; 1.458 ; wave_count[6]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.080      ; 1.750      ;
-; 1.480 ; wave_count[6]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.772      ;
-; 1.492 ; wave_count[20] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.079      ; 1.783      ;
-; 1.510 ; wave_count[23] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.586      ; 2.308      ;
-; 1.526 ; wave_count[1]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.819      ;
-; 1.526 ; wave_count[3]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.819      ;
-; 1.527 ; wave_count[9]  ; wave_count[15] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.820      ;
+; 0.452 ; count[0]       ; count[0]       ; clk          ; clk         ; 0.000        ; 0.082      ; 0.746      ;
+; 0.452 ; count[1]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.082      ; 0.746      ;
+; 0.452 ; count[2]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.082      ; 0.746      ;
+; 0.452 ; count[3]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.082      ; 0.746      ;
+; 0.453 ; wave_count[4]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; wave_count[5]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; wave_count[6]  ; wave_count[6]  ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; wave_count[7]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; wave_count[16] ; wave_count[16] ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; wave_count[17] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; wave_count[18] ; wave_count[18] ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; wave_count[19] ; wave_count[19] ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; wave_count[24] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; wave_count[25] ; wave_count[25] ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; wave_count[26] ; wave_count[26] ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; wave_count[27] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.454 ; wave_count[8]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[1]  ; wave_count[1]  ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[2]  ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[3]  ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[9]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[10] ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[11] ; wave_count[11] ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[13] ; wave_count[13] ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[12] ; wave_count[12] ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[14] ; wave_count[14] ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[15] ; wave_count[15] ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[20] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[21] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[22] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[23] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[29] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[28] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[30] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; wave_count[31] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.564 ; count[0]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.082      ; 0.858      ;
+; 1.215 ; count[0]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.082      ; 1.509      ;
+; 1.215 ; count[0]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.082      ; 1.509      ;
+; 1.343 ; count[1]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.082      ; 1.637      ;
+; 1.343 ; count[1]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.082      ; 1.637      ;
+; 1.516 ; count[2]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.082      ; 1.810      ;
+; 1.552 ; count[3]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.082      ; 1.846      ;
+; 1.603 ; count[2]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.082      ; 1.897      ;
+; 1.604 ; count[3]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.082      ; 1.898      ;
+; 1.802 ; wave_count[0]  ; wave_count[1]  ; clk          ; clk         ; 0.000        ; 0.056      ; 2.070      ;
+; 1.855 ; wave_count[18] ; wave_count[19] ; clk          ; clk         ; 0.000        ; 0.081      ; 2.148      ;
+; 1.864 ; wave_count[16] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.081      ; 2.157      ;
+; 1.876 ; wave_count[24] ; wave_count[25] ; clk          ; clk         ; 0.000        ; 0.081      ; 2.169      ;
+; 1.909 ; wave_count[26] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.081      ; 2.202      ;
+; 1.917 ; wave_count[17] ; wave_count[18] ; clk          ; clk         ; 0.000        ; 0.081      ; 2.210      ;
+; 1.928 ; wave_count[16] ; wave_count[18] ; clk          ; clk         ; 0.000        ; 0.081      ; 2.221      ;
+; 1.963 ; wave_count[17] ; wave_count[19] ; clk          ; clk         ; 0.000        ; 0.081      ; 2.256      ;
+; 1.968 ; count[0]       ; wave_count[16] ; clk          ; clk         ; 0.000        ; 0.085      ; 2.265      ;
+; 1.977 ; wave_count[29] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.269      ;
+; 1.981 ; wave_count[29] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.273      ;
+; 1.986 ; wave_count[29] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.278      ;
+; 1.986 ; wave_count[29] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.278      ;
+; 1.987 ; wave_count[29] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.279      ;
+; 1.990 ; wave_count[23] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.099      ; 2.301      ;
+; 1.990 ; wave_count[18] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.062      ; 2.264      ;
+; 1.996 ; wave_count[16] ; wave_count[19] ; clk          ; clk         ; 0.000        ; 0.081      ; 2.289      ;
+; 2.007 ; wave_count[22] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.099      ; 2.318      ;
+; 2.009 ; wave_count[27] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.062      ; 2.283      ;
+; 2.016 ; wave_count[24] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.081      ; 2.309      ;
+; 2.031 ; wave_count[0]  ; wave_count[0]  ; clk          ; clk         ; 0.000        ; 0.081      ; 2.324      ;
+; 2.031 ; wave_count[19] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.062      ; 2.305      ;
+; 2.040 ; wave_count[8]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.080      ; 2.332      ;
+; 2.056 ; wave_count[29] ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.078      ; 2.346      ;
+; 2.060 ; wave_count[20] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.352      ;
+; 2.068 ; wave_count[29] ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.078      ; 2.358      ;
+; 2.074 ; wave_count[21] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.366      ;
+; 2.076 ; wave_count[21] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.099      ; 2.387      ;
+; 2.078 ; count[0]       ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.066      ; 2.356      ;
+; 2.079 ; wave_count[13] ; wave_count[14] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.371      ;
+; 2.079 ; wave_count[14] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.101      ; 2.392      ;
+; 2.082 ; wave_count[29] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.374      ;
+; 2.083 ; wave_count[26] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.062      ; 2.357      ;
+; 2.089 ; wave_count[22] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.381      ;
+; 2.090 ; wave_count[22] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.382      ;
+; 2.092 ; wave_count[10] ; wave_count[11] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.384      ;
+; 2.092 ; wave_count[22] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.384      ;
+; 2.095 ; wave_count[30] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.387      ;
+; 2.095 ; wave_count[22] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.387      ;
+; 2.095 ; wave_count[20] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.387      ;
+; 2.096 ; count[1]       ; wave_count[16] ; clk          ; clk         ; 0.000        ; 0.085      ; 2.393      ;
+; 2.097 ; wave_count[20] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.099      ; 2.408      ;
+; 2.098 ; wave_count[22] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.390      ;
+; 2.101 ; wave_count[15] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.101      ; 2.414      ;
+; 2.102 ; wave_count[8]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.394      ;
+; 2.113 ; wave_count[0]  ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.056      ; 2.381      ;
+; 2.118 ; wave_count[23] ; wave_count[25] ; clk          ; clk         ; 0.000        ; 0.099      ; 2.429      ;
+; 2.118 ; wave_count[31] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.410      ;
+; 2.121 ; wave_count[31] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.413      ;
+; 2.121 ; wave_count[19] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.062      ; 2.395      ;
+; 2.124 ; wave_count[31] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.416      ;
+; 2.124 ; wave_count[18] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.062      ; 2.398      ;
+; 2.125 ; wave_count[31] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.417      ;
+; 2.125 ; wave_count[31] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.417      ;
+; 2.127 ; wave_count[31] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.080      ; 2.419      ;
+; 2.130 ; wave_count[17] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.062      ; 2.404      ;
 +-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -392,13 +392,13 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                                                                         ;
-+------------+-----------------+------------+---------------------------------------------------------------+
-; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
-+------------+-----------------+------------+---------------------------------------------------------------+
-; 255.43 MHz ; 250.0 MHz       ; clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
-+------------+-----------------+------------+---------------------------------------------------------------+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 203.17 MHz ; 203.17 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -407,7 +407,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+-------------------+
 ; Clock ; Slack  ; End Point TNS     ;
 +-------+--------+-------------------+
-; clk   ; -2.915 ; -76.920           ;
+; clk   ; -3.922 ; -118.611          ;
 +-------+--------+-------------------+
 
 
@@ -416,7 +416,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+-------------------+
 ; Clock ; Slack ; End Point TNS     ;
 +-------+-------+-------------------+
-; clk   ; 0.383 ; 0.000             ;
+; clk   ; 0.401 ; 0.000             ;
 +-------+-------+-------------------+
 
 
@@ -446,106 +446,106 @@ No paths to report.
 +--------+----------------+----------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node      ; To Node        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+----------------+----------------+--------------+-------------+--------------+------------+------------+
-; -2.915 ; wave_count[15] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.073     ; 3.844      ;
-; -2.892 ; wave_count[17] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.062     ; 3.832      ;
-; -2.890 ; wave_count[9]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.073     ; 3.819      ;
-; -2.856 ; wave_count[15] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.081     ; 3.777      ;
-; -2.856 ; wave_count[15] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.081     ; 3.777      ;
-; -2.828 ; wave_count[29] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.062     ; 3.768      ;
-; -2.813 ; wave_count[28] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.062     ; 3.753      ;
-; -2.783 ; wave_count[26] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.062     ; 3.723      ;
-; -2.771 ; wave_count[4]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.073     ; 3.700      ;
-; -2.771 ; wave_count[31] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.062     ; 3.711      ;
-; -2.763 ; wave_count[20] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.064     ; 3.701      ;
-; -2.762 ; wave_count[19] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.544     ; 3.220      ;
-; -2.752 ; wave_count[29] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.070     ; 3.684      ;
-; -2.752 ; wave_count[29] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.070     ; 3.684      ;
-; -2.745 ; wave_count[28] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.070     ; 3.677      ;
-; -2.745 ; wave_count[28] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.070     ; 3.677      ;
-; -2.741 ; wave_count[1]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; 0.380      ; 4.123      ;
-; -2.737 ; wave_count[5]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.073     ; 3.666      ;
-; -2.732 ; wave_count[1]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.073     ; 3.661      ;
-; -2.729 ; wave_count[12] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.090     ; 3.641      ;
-; -2.727 ; wave_count[15] ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.056     ; 3.673      ;
-; -2.727 ; wave_count[15] ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.056     ; 3.673      ;
-; -2.727 ; wave_count[15] ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.056     ; 3.673      ;
-; -2.727 ; wave_count[13] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.090     ; 3.639      ;
-; -2.725 ; wave_count[0]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.073     ; 3.654      ;
-; -2.723 ; wave_count[1]  ; wave_count[22] ; clk          ; clk         ; 1.000        ; 0.380      ; 4.105      ;
-; -2.712 ; wave_count[31] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.070     ; 3.644      ;
-; -2.712 ; wave_count[31] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.070     ; 3.644      ;
-; -2.704 ; wave_count[20] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.072     ; 3.634      ;
-; -2.704 ; wave_count[20] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.072     ; 3.634      ;
-; -2.689 ; wave_count[18] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.544     ; 3.147      ;
-; -2.687 ; wave_count[15] ; count[3]       ; clk          ; clk         ; 1.000        ; 0.391      ; 4.080      ;
-; -2.677 ; wave_count[1]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.070     ; 3.609      ;
-; -2.673 ; wave_count[0]  ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.056     ; 3.619      ;
-; -2.670 ; wave_count[12] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.098     ; 3.574      ;
-; -2.670 ; wave_count[12] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.098     ; 3.574      ;
-; -2.670 ; wave_count[17] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.070     ; 3.602      ;
-; -2.670 ; wave_count[17] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.070     ; 3.602      ;
-; -2.669 ; wave_count[3]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.073     ; 3.598      ;
-; -2.668 ; wave_count[13] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.098     ; 3.572      ;
-; -2.668 ; wave_count[13] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.098     ; 3.572      ;
-; -2.660 ; wave_count[0]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; 0.380      ; 4.042      ;
-; -2.657 ; wave_count[0]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.083     ; 3.576      ;
-; -2.657 ; wave_count[9]  ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.081     ; 3.578      ;
-; -2.657 ; wave_count[9]  ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.081     ; 3.578      ;
-; -2.655 ; wave_count[0]  ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.081     ; 3.576      ;
-; -2.655 ; wave_count[27] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.062     ; 3.595      ;
-; -2.654 ; wave_count[19] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.552     ; 3.104      ;
-; -2.654 ; wave_count[19] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.552     ; 3.104      ;
-; -2.650 ; wave_count[1]  ; wave_count[18] ; clk          ; clk         ; 1.000        ; 0.380      ; 4.032      ;
-; -2.642 ; wave_count[0]  ; wave_count[22] ; clk          ; clk         ; 1.000        ; 0.380      ; 4.024      ;
-; -2.631 ; wave_count[21] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.064     ; 3.569      ;
-; -2.623 ; wave_count[29] ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.045     ; 3.580      ;
-; -2.623 ; wave_count[29] ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.045     ; 3.580      ;
-; -2.623 ; wave_count[29] ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.045     ; 3.580      ;
-; -2.616 ; wave_count[28] ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.045     ; 3.573      ;
-; -2.616 ; wave_count[28] ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.045     ; 3.573      ;
-; -2.616 ; wave_count[28] ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.045     ; 3.573      ;
-; -2.613 ; wave_count[1]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.083     ; 3.532      ;
-; -2.612 ; wave_count[3]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; 0.380      ; 3.994      ;
-; -2.598 ; wave_count[1]  ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.081     ; 3.519      ;
-; -2.598 ; wave_count[1]  ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.081     ; 3.519      ;
-; -2.597 ; wave_count[18] ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.554     ; 3.045      ;
-; -2.596 ; wave_count[24] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.544     ; 3.054      ;
-; -2.596 ; wave_count[0]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.070     ; 3.528      ;
-; -2.595 ; wave_count[18] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.552     ; 3.045      ;
-; -2.594 ; wave_count[3]  ; wave_count[22] ; clk          ; clk         ; 1.000        ; 0.380      ; 3.976      ;
-; -2.583 ; wave_count[29] ; count[3]       ; clk          ; clk         ; 1.000        ; 0.402      ; 3.987      ;
-; -2.583 ; wave_count[31] ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.045     ; 3.540      ;
-; -2.583 ; wave_count[31] ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.045     ; 3.540      ;
-; -2.583 ; wave_count[31] ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.045     ; 3.540      ;
-; -2.576 ; wave_count[28] ; count[3]       ; clk          ; clk         ; 1.000        ; 0.402      ; 3.980      ;
-; -2.575 ; wave_count[20] ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.047     ; 3.530      ;
-; -2.575 ; wave_count[20] ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.047     ; 3.530      ;
-; -2.575 ; wave_count[20] ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.047     ; 3.530      ;
-; -2.574 ; wave_count[1]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.083     ; 3.493      ;
-; -2.572 ; wave_count[21] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.072     ; 3.502      ;
-; -2.572 ; wave_count[21] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.072     ; 3.502      ;
-; -2.569 ; wave_count[0]  ; wave_count[18] ; clk          ; clk         ; 1.000        ; 0.380      ; 3.951      ;
-; -2.563 ; wave_count[1]  ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.056     ; 3.509      ;
-; -2.559 ; wave_count[19] ; wave_count[24] ; clk          ; clk         ; 1.000        ; -0.091     ; 3.470      ;
-; -2.556 ; wave_count[1]  ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.056     ; 3.502      ;
-; -2.550 ; wave_count[2]  ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.056     ; 3.496      ;
-; -2.548 ; wave_count[5]  ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.081     ; 3.469      ;
-; -2.548 ; wave_count[5]  ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.081     ; 3.469      ;
-; -2.548 ; wave_count[3]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.070     ; 3.480      ;
-; -2.547 ; wave_count[15] ; wave_count[6]  ; clk          ; clk         ; 1.000        ; -0.070     ; 3.479      ;
-; -2.543 ; wave_count[31] ; count[3]       ; clk          ; clk         ; 1.000        ; 0.402      ; 3.947      ;
-; -2.543 ; wave_count[4]  ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.081     ; 3.464      ;
-; -2.543 ; wave_count[4]  ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.081     ; 3.464      ;
-; -2.541 ; wave_count[12] ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.073     ; 3.470      ;
-; -2.541 ; wave_count[12] ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.073     ; 3.470      ;
-; -2.541 ; wave_count[12] ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.073     ; 3.470      ;
-; -2.541 ; wave_count[19] ; wave_count[22] ; clk          ; clk         ; 1.000        ; -0.091     ; 3.452      ;
-; -2.541 ; wave_count[17] ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.045     ; 3.498      ;
-; -2.541 ; wave_count[17] ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.045     ; 3.498      ;
-; -2.541 ; wave_count[17] ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.045     ; 3.498      ;
-; -2.539 ; wave_count[13] ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.073     ; 3.468      ;
-; -2.539 ; wave_count[13] ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.073     ; 3.468      ;
-; -2.539 ; wave_count[13] ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.073     ; 3.468      ;
+; -3.922 ; wave_count[7]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 4.854      ;
+; -3.888 ; wave_count[4]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.799      ;
+; -3.809 ; wave_count[6]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.720      ;
+; -3.806 ; wave_count[4]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 4.738      ;
+; -3.781 ; wave_count[5]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 4.713      ;
+; -3.773 ; wave_count[5]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.684      ;
+; -3.760 ; wave_count[0]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.073     ; 4.689      ;
+; -3.707 ; wave_count[12] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.050     ; 4.659      ;
+; -3.705 ; wave_count[14] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.050     ; 4.657      ;
+; -3.700 ; wave_count[17] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 4.632      ;
+; -3.700 ; wave_count[2]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.631      ;
+; -3.693 ; wave_count[1]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.624      ;
+; -3.642 ; wave_count[15] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.050     ; 4.594      ;
+; -3.641 ; wave_count[4]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.552      ;
+; -3.641 ; wave_count[19] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 4.573      ;
+; -3.634 ; wave_count[7]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.076     ; 4.560      ;
+; -3.621 ; wave_count[3]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.552      ;
+; -3.607 ; wave_count[9]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.050     ; 4.559      ;
+; -3.596 ; wave_count[7]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.507      ;
+; -3.581 ; wave_count[0]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.094     ; 4.489      ;
+; -3.562 ; wave_count[6]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.473      ;
+; -3.554 ; wave_count[11] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.050     ; 4.506      ;
+; -3.548 ; wave_count[1]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.479      ;
+; -3.526 ; wave_count[5]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.437      ;
+; -3.521 ; wave_count[1]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.053     ; 4.470      ;
+; -3.521 ; wave_count[18] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 4.453      ;
+; -3.518 ; wave_count[4]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.076     ; 4.444      ;
+; -3.516 ; wave_count[2]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.050     ; 4.468      ;
+; -3.512 ; wave_count[5]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.423      ;
+; -3.502 ; wave_count[6]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 4.434      ;
+; -3.493 ; wave_count[5]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.076     ; 4.419      ;
+; -3.485 ; wave_count[5]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.073     ; 4.414      ;
+; -3.479 ; wave_count[13] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.050     ; 4.431      ;
+; -3.475 ; wave_count[4]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.386      ;
+; -3.472 ; wave_count[0]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.079     ; 4.395      ;
+; -3.469 ; wave_count[25] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 4.401      ;
+; -3.457 ; wave_count[7]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.073     ; 4.386      ;
+; -3.456 ; wave_count[7]  ; wave_count[5]  ; clk          ; clk         ; 1.000        ; -0.073     ; 4.385      ;
+; -3.456 ; wave_count[1]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.050     ; 4.408      ;
+; -3.454 ; wave_count[7]  ; wave_count[7]  ; clk          ; clk         ; 1.000        ; -0.073     ; 4.383      ;
+; -3.453 ; wave_count[2]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.384      ;
+; -3.451 ; wave_count[7]  ; wave_count[4]  ; clk          ; clk         ; 1.000        ; -0.073     ; 4.380      ;
+; -3.450 ; wave_count[7]  ; wave_count[6]  ; clk          ; clk         ; 1.000        ; -0.073     ; 4.379      ;
+; -3.448 ; wave_count[4]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.073     ; 4.377      ;
+; -3.446 ; wave_count[1]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.377      ;
+; -3.444 ; wave_count[3]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.375      ;
+; -3.425 ; wave_count[1]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.356      ;
+; -3.419 ; wave_count[12] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.056     ; 4.365      ;
+; -3.419 ; wave_count[24] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 4.351      ;
+; -3.417 ; wave_count[3]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.053     ; 4.366      ;
+; -3.417 ; wave_count[14] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.056     ; 4.363      ;
+; -3.412 ; wave_count[17] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.076     ; 4.338      ;
+; -3.408 ; wave_count[10] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.050     ; 4.360      ;
+; -3.396 ; wave_count[6]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.307      ;
+; -3.389 ; wave_count[5]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.300      ;
+; -3.388 ; wave_count[16] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 4.320      ;
+; -3.374 ; wave_count[3]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.305      ;
+; -3.373 ; wave_count[7]  ; wave_count[27] ; clk          ; clk         ; 1.000        ; -0.073     ; 4.302      ;
+; -3.371 ; wave_count[7]  ; wave_count[25] ; clk          ; clk         ; 1.000        ; -0.073     ; 4.300      ;
+; -3.371 ; wave_count[7]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.073     ; 4.300      ;
+; -3.369 ; wave_count[7]  ; wave_count[17] ; clk          ; clk         ; 1.000        ; -0.073     ; 4.298      ;
+; -3.369 ; wave_count[6]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.073     ; 4.298      ;
+; -3.367 ; wave_count[7]  ; wave_count[19] ; clk          ; clk         ; 1.000        ; -0.073     ; 4.296      ;
+; -3.366 ; wave_count[7]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; -0.073     ; 4.295      ;
+; -3.365 ; wave_count[7]  ; wave_count[18] ; clk          ; clk         ; 1.000        ; -0.073     ; 4.294      ;
+; -3.360 ; wave_count[7]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.271      ;
+; -3.354 ; wave_count[15] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.056     ; 4.300      ;
+; -3.353 ; wave_count[19] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.076     ; 4.279      ;
+; -3.352 ; wave_count[4]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.263      ;
+; -3.349 ; wave_count[7]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.260      ;
+; -3.347 ; wave_count[4]  ; wave_count[27] ; clk          ; clk         ; 1.000        ; -0.073     ; 4.276      ;
+; -3.343 ; wave_count[8]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.274      ;
+; -3.341 ; wave_count[4]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.073     ; 4.270      ;
+; -3.340 ; wave_count[4]  ; wave_count[5]  ; clk          ; clk         ; 1.000        ; -0.073     ; 4.269      ;
+; -3.338 ; wave_count[4]  ; wave_count[7]  ; clk          ; clk         ; 1.000        ; -0.073     ; 4.267      ;
+; -3.335 ; wave_count[4]  ; wave_count[4]  ; clk          ; clk         ; 1.000        ; -0.073     ; 4.264      ;
+; -3.334 ; wave_count[4]  ; wave_count[6]  ; clk          ; clk         ; 1.000        ; -0.073     ; 4.263      ;
+; -3.334 ; wave_count[0]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.094     ; 4.242      ;
+; -3.325 ; wave_count[7]  ; count[2]       ; clk          ; clk         ; 1.000        ; -0.076     ; 4.251      ;
+; -3.324 ; wave_count[7]  ; count[0]       ; clk          ; clk         ; 1.000        ; -0.076     ; 4.250      ;
+; -3.324 ; wave_count[2]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.255      ;
+; -3.321 ; wave_count[7]  ; count[3]       ; clk          ; clk         ; 1.000        ; -0.076     ; 4.247      ;
+; -3.321 ; wave_count[3]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.252      ;
+; -3.319 ; wave_count[9]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.056     ; 4.265      ;
+; -3.316 ; wave_count[5]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.073     ; 4.245      ;
+; -3.315 ; wave_count[5]  ; wave_count[5]  ; clk          ; clk         ; 1.000        ; -0.073     ; 4.244      ;
+; -3.313 ; wave_count[5]  ; wave_count[7]  ; clk          ; clk         ; 1.000        ; -0.073     ; 4.242      ;
+; -3.310 ; wave_count[5]  ; wave_count[4]  ; clk          ; clk         ; 1.000        ; -0.073     ; 4.239      ;
+; -3.309 ; wave_count[5]  ; wave_count[6]  ; clk          ; clk         ; 1.000        ; -0.073     ; 4.238      ;
+; -3.297 ; wave_count[2]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.053     ; 4.246      ;
+; -3.295 ; wave_count[0]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.076     ; 4.221      ;
+; -3.294 ; wave_count[0]  ; wave_count[5]  ; clk          ; clk         ; 1.000        ; -0.076     ; 4.220      ;
+; -3.292 ; wave_count[0]  ; wave_count[7]  ; clk          ; clk         ; 1.000        ; -0.076     ; 4.218      ;
+; -3.289 ; wave_count[0]  ; wave_count[4]  ; clk          ; clk         ; 1.000        ; -0.076     ; 4.215      ;
+; -3.288 ; wave_count[0]  ; wave_count[6]  ; clk          ; clk         ; 1.000        ; -0.076     ; 4.214      ;
+; -3.283 ; wave_count[8]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.050     ; 4.235      ;
+; -3.273 ; wave_count[6]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.091     ; 4.184      ;
+; -3.271 ; wave_count[10] ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.202      ;
+; -3.269 ; wave_count[27] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.070     ; 4.201      ;
+; -3.268 ; wave_count[6]  ; wave_count[27] ; clk          ; clk         ; 1.000        ; -0.073     ; 4.197      ;
 +--------+----------------+----------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -554,106 +554,106 @@ No paths to report.
 +-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node      ; To Node        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
-; 0.383 ; count[3]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.091      ; 0.669      ;
-; 0.383 ; count[2]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.091      ; 0.669      ;
-; 0.383 ; count[1]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.091      ; 0.669      ;
-; 0.383 ; count[0]       ; count[0]       ; clk          ; clk         ; 0.000        ; 0.091      ; 0.669      ;
-; 0.703 ; wave_count[15] ; wave_count[15] ; clk          ; clk         ; 0.000        ; 0.073      ; 0.971      ;
-; 0.704 ; wave_count[5]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.972      ;
-; 0.704 ; wave_count[3]  ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.972      ;
-; 0.705 ; wave_count[1]  ; wave_count[1]  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.973      ;
-; 0.706 ; wave_count[29] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.973      ;
-; 0.707 ; wave_count[27] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.974      ;
-; 0.707 ; wave_count[17] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.974      ;
-; 0.707 ; wave_count[9]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.975      ;
-; 0.707 ; wave_count[7]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.975      ;
-; 0.708 ; wave_count[31] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.975      ;
-; 0.709 ; wave_count[23] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.976      ;
-; 0.709 ; wave_count[25] ; wave_count[25] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.976      ;
-; 0.709 ; wave_count[2]  ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.977      ;
-; 0.710 ; wave_count[10] ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.073      ; 0.978      ;
-; 0.710 ; wave_count[8]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.978      ;
-; 0.710 ; wave_count[4]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.978      ;
-; 0.712 ; wave_count[30] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.979      ;
-; 0.712 ; wave_count[28] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.979      ;
-; 0.712 ; wave_count[26] ; wave_count[26] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.979      ;
-; 0.752 ; count[0]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.091      ; 1.038      ;
-; 0.754 ; count[0]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.091      ; 1.040      ;
-; 0.763 ; count[1]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.091      ; 1.049      ;
-; 0.973 ; count[0]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.091      ; 1.259      ;
-; 1.025 ; wave_count[0]  ; wave_count[1]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.293      ;
-; 1.026 ; wave_count[3]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.294      ;
-; 1.027 ; wave_count[4]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.295      ;
-; 1.027 ; wave_count[2]  ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.295      ;
-; 1.028 ; wave_count[8]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.296      ;
-; 1.028 ; wave_count[29] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.295      ;
-; 1.029 ; wave_count[1]  ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.297      ;
-; 1.029 ; wave_count[27] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.296      ;
-; 1.030 ; wave_count[28] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.297      ;
-; 1.030 ; wave_count[26] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.297      ;
-; 1.030 ; wave_count[30] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.297      ;
-; 1.031 ; wave_count[9]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.073      ; 1.299      ;
-; 1.031 ; wave_count[7]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.299      ;
-; 1.033 ; wave_count[25] ; wave_count[26] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.300      ;
-; 1.040 ; wave_count[0]  ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.308      ;
-; 1.043 ; wave_count[2]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.311      ;
-; 1.044 ; wave_count[8]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.073      ; 1.312      ;
-; 1.046 ; wave_count[28] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.313      ;
-; 1.046 ; wave_count[26] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.313      ;
-; 1.091 ; count[2]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.091      ; 1.377      ;
-; 1.107 ; count[1]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.091      ; 1.393      ;
-; 1.119 ; wave_count[5]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.387      ;
-; 1.119 ; wave_count[3]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.387      ;
-; 1.122 ; wave_count[27] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.389      ;
-; 1.122 ; wave_count[29] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.389      ;
-; 1.124 ; wave_count[1]  ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.392      ;
-; 1.126 ; wave_count[7]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.394      ;
-; 1.128 ; wave_count[23] ; wave_count[25] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.395      ;
-; 1.128 ; wave_count[25] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.395      ;
-; 1.129 ; wave_count[15] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.062      ; 1.386      ;
-; 1.147 ; wave_count[0]  ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.415      ;
-; 1.148 ; wave_count[5]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.416      ;
-; 1.149 ; wave_count[4]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.417      ;
-; 1.149 ; wave_count[2]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.417      ;
-; 1.151 ; wave_count[1]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.419      ;
-; 1.151 ; wave_count[27] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.418      ;
-; 1.152 ; wave_count[26] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.419      ;
-; 1.152 ; wave_count[28] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.419      ;
-; 1.153 ; wave_count[7]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.073      ; 1.421      ;
-; 1.155 ; wave_count[23] ; wave_count[26] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.422      ;
-; 1.155 ; wave_count[25] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.422      ;
-; 1.162 ; wave_count[0]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.430      ;
-; 1.166 ; wave_count[4]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.434      ;
-; 1.168 ; wave_count[26] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.435      ;
-; 1.185 ; wave_count[6]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.070      ; 1.450      ;
-; 1.241 ; wave_count[5]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.509      ;
-; 1.241 ; wave_count[3]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.509      ;
-; 1.244 ; wave_count[27] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.511      ;
-; 1.246 ; wave_count[1]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.514      ;
-; 1.250 ; wave_count[23] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.517      ;
-; 1.250 ; wave_count[25] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.517      ;
-; 1.251 ; wave_count[6]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.070      ; 1.516      ;
-; 1.264 ; wave_count[14] ; wave_count[15] ; clk          ; clk         ; 0.000        ; 0.056      ; 1.515      ;
-; 1.268 ; wave_count[21] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.070      ; 1.533      ;
-; 1.269 ; wave_count[0]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.537      ;
-; 1.270 ; wave_count[5]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.073      ; 1.538      ;
-; 1.270 ; wave_count[3]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.538      ;
-; 1.271 ; wave_count[4]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.539      ;
-; 1.271 ; wave_count[2]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.539      ;
-; 1.272 ; wave_count[10] ; wave_count[15] ; clk          ; clk         ; 0.000        ; 0.073      ; 1.540      ;
-; 1.274 ; wave_count[26] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.541      ;
-; 1.277 ; wave_count[23] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.544      ;
-; 1.277 ; wave_count[25] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.544      ;
-; 1.287 ; wave_count[2]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.555      ;
-; 1.288 ; wave_count[4]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.073      ; 1.556      ;
-; 1.307 ; wave_count[6]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.070      ; 1.572      ;
-; 1.334 ; wave_count[20] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.070      ; 1.599      ;
-; 1.340 ; wave_count[23] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.554      ; 2.089      ;
-; 1.363 ; wave_count[3]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.631      ;
-; 1.366 ; wave_count[20] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.633      ;
-; 1.366 ; wave_count[16] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.541      ; 2.102      ;
-; 1.368 ; wave_count[1]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.073      ; 1.636      ;
-; 1.370 ; wave_count[9]  ; wave_count[15] ; clk          ; clk         ; 0.000        ; 0.073      ; 1.638      ;
+; 0.401 ; wave_count[4]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; wave_count[5]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; wave_count[6]  ; wave_count[6]  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; wave_count[7]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; wave_count[16] ; wave_count[16] ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; wave_count[17] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; wave_count[18] ; wave_count[18] ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; wave_count[19] ; wave_count[19] ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; wave_count[24] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; wave_count[25] ; wave_count[25] ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; wave_count[26] ; wave_count[26] ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; wave_count[27] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.402 ; count[0]       ; count[0]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[8]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[1]  ; wave_count[1]  ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[2]  ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[3]  ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[9]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[10] ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[11] ; wave_count[11] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[13] ; wave_count[13] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[12] ; wave_count[12] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[14] ; wave_count[14] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[15] ; wave_count[15] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[20] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[21] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[22] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[23] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[29] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[28] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[30] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; wave_count[31] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; count[1]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; count[2]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; count[3]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.519 ; count[0]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.786      ;
+; 1.103 ; count[0]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.370      ;
+; 1.104 ; count[0]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.371      ;
+; 1.232 ; count[1]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.499      ;
+; 1.233 ; count[1]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.500      ;
+; 1.432 ; count[2]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.699      ;
+; 1.472 ; count[3]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.739      ;
+; 1.479 ; count[2]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.746      ;
+; 1.521 ; count[3]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.788      ;
+; 1.627 ; wave_count[0]  ; wave_count[1]  ; clk          ; clk         ; 0.000        ; 0.050      ; 1.872      ;
+; 1.649 ; wave_count[18] ; wave_count[19] ; clk          ; clk         ; 0.000        ; 0.073      ; 1.917      ;
+; 1.657 ; wave_count[16] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.073      ; 1.925      ;
+; 1.682 ; wave_count[24] ; wave_count[25] ; clk          ; clk         ; 0.000        ; 0.073      ; 1.950      ;
+; 1.692 ; wave_count[26] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.073      ; 1.960      ;
+; 1.737 ; wave_count[17] ; wave_count[18] ; clk          ; clk         ; 0.000        ; 0.073      ; 2.005      ;
+; 1.746 ; wave_count[17] ; wave_count[19] ; clk          ; clk         ; 0.000        ; 0.073      ; 2.014      ;
+; 1.755 ; count[0]       ; wave_count[16] ; clk          ; clk         ; 0.000        ; 0.076      ; 2.026      ;
+; 1.763 ; wave_count[16] ; wave_count[18] ; clk          ; clk         ; 0.000        ; 0.073      ; 2.031      ;
+; 1.772 ; wave_count[16] ; wave_count[19] ; clk          ; clk         ; 0.000        ; 0.073      ; 2.040      ;
+; 1.779 ; wave_count[29] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.046      ;
+; 1.783 ; wave_count[29] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.050      ;
+; 1.787 ; wave_count[29] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.054      ;
+; 1.788 ; wave_count[29] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.055      ;
+; 1.788 ; wave_count[29] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.055      ;
+; 1.803 ; wave_count[24] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.073      ; 2.071      ;
+; 1.826 ; wave_count[0]  ; wave_count[0]  ; clk          ; clk         ; 0.000        ; 0.073      ; 2.094      ;
+; 1.826 ; wave_count[18] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.054      ; 2.075      ;
+; 1.828 ; wave_count[23] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.091      ; 2.114      ;
+; 1.828 ; wave_count[19] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.054      ; 2.077      ;
+; 1.834 ; wave_count[27] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.054      ; 2.083      ;
+; 1.838 ; wave_count[8]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.072      ; 2.105      ;
+; 1.845 ; wave_count[22] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.091      ; 2.131      ;
+; 1.851 ; wave_count[29] ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.071      ; 2.117      ;
+; 1.865 ; wave_count[10] ; wave_count[11] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.132      ;
+; 1.866 ; wave_count[29] ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.071      ; 2.132      ;
+; 1.866 ; wave_count[22] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.133      ;
+; 1.869 ; wave_count[20] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.136      ;
+; 1.871 ; wave_count[15] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.092      ; 2.158      ;
+; 1.881 ; wave_count[30] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.148      ;
+; 1.883 ; wave_count[23] ; wave_count[25] ; clk          ; clk         ; 0.000        ; 0.091      ; 2.169      ;
+; 1.883 ; wave_count[19] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.054      ; 2.132      ;
+; 1.885 ; wave_count[18] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.054      ; 2.134      ;
+; 1.886 ; wave_count[26] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.054      ; 2.135      ;
+; 1.886 ; wave_count[14] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.092      ; 2.173      ;
+; 1.894 ; wave_count[21] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.161      ;
+; 1.895 ; wave_count[21] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.091      ; 2.181      ;
+; 1.898 ; wave_count[13] ; wave_count[14] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.165      ;
+; 1.904 ; wave_count[29] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.171      ;
+; 1.906 ; wave_count[22] ; wave_count[25] ; clk          ; clk         ; 0.000        ; 0.091      ; 2.192      ;
+; 1.909 ; wave_count[31] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.176      ;
+; 1.910 ; wave_count[20] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.177      ;
+; 1.911 ; wave_count[20] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.091      ; 2.197      ;
+; 1.913 ; wave_count[31] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.180      ;
+; 1.913 ; wave_count[0]  ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.050      ; 2.158      ;
+; 1.917 ; count[1]       ; wave_count[16] ; clk          ; clk         ; 0.000        ; 0.076      ; 2.188      ;
+; 1.917 ; wave_count[31] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.184      ;
+; 1.918 ; wave_count[8]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.185      ;
+; 1.918 ; wave_count[31] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.185      ;
+; 1.918 ; wave_count[31] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.185      ;
+; 1.922 ; wave_count[31] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.189      ;
+; 1.927 ; wave_count[17] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.054      ; 2.176      ;
+; 1.929 ; count[0]       ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.057      ; 2.181      ;
+; 1.933 ; wave_count[21] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.200      ;
+; 1.940 ; wave_count[14] ; wave_count[18] ; clk          ; clk         ; 0.000        ; 0.092      ; 2.227      ;
+; 1.940 ; wave_count[29] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.072      ; 2.207      ;
 +-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -668,7 +668,7 @@ No synchronizer chains to report.
 +-------+--------+-------------------+
 ; Clock ; Slack  ; End Point TNS     ;
 +-------+--------+-------------------+
-; clk   ; -0.867 ; -18.675           ;
+; clk   ; -1.399 ; -37.652           ;
 +-------+--------+-------------------+
 
 
@@ -677,7 +677,7 @@ No synchronizer chains to report.
 +-------+-------+-------------------+
 ; Clock ; Slack ; End Point TNS     ;
 +-------+-------+-------------------+
-; clk   ; 0.179 ; 0.000             ;
+; clk   ; 0.186 ; 0.000             ;
 +-------+-------+-------------------+
 
 
@@ -698,7 +698,7 @@ No paths to report.
 +-------+--------+---------------------------------+
 ; Clock ; Slack  ; End Point TNS                   ;
 +-------+--------+---------------------------------+
-; clk   ; -3.000 ; -41.536                         ;
+; clk   ; -3.000 ; -41.337                         ;
 +-------+--------+---------------------------------+
 
 
@@ -707,106 +707,106 @@ No paths to report.
 +--------+----------------+----------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node      ; To Node        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+----------------+----------------+--------------+-------------+--------------+------------+------------+
-; -0.867 ; wave_count[1]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; 0.156      ; 2.010      ;
-; -0.853 ; wave_count[1]  ; wave_count[22] ; clk          ; clk         ; 1.000        ; 0.156      ; 1.996      ;
-; -0.845 ; wave_count[1]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.790      ;
-; -0.841 ; wave_count[1]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.786      ;
-; -0.832 ; wave_count[0]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.777      ;
-; -0.820 ; wave_count[0]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; 0.156      ; 1.963      ;
-; -0.806 ; wave_count[0]  ; wave_count[22] ; clk          ; clk         ; 1.000        ; 0.156      ; 1.949      ;
-; -0.796 ; wave_count[3]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; 0.156      ; 1.939      ;
-; -0.794 ; wave_count[0]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.739      ;
-; -0.782 ; wave_count[3]  ; wave_count[22] ; clk          ; clk         ; 1.000        ; 0.156      ; 1.925      ;
-; -0.778 ; wave_count[1]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.730      ;
-; -0.777 ; wave_count[1]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.722      ;
-; -0.775 ; wave_count[1]  ; wave_count[18] ; clk          ; clk         ; 1.000        ; 0.156      ; 1.918      ;
-; -0.774 ; wave_count[3]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.719      ;
-; -0.773 ; wave_count[1]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.718      ;
-; -0.770 ; wave_count[3]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.715      ;
-; -0.766 ; wave_count[1]  ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.027     ; 1.726      ;
-; -0.764 ; wave_count[2]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.709      ;
-; -0.764 ; wave_count[0]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.709      ;
-; -0.762 ; wave_count[1]  ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.027     ; 1.722      ;
-; -0.762 ; wave_count[1]  ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.041     ; 1.708      ;
-; -0.760 ; wave_count[15] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.037     ; 1.710      ;
-; -0.752 ; wave_count[2]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; 0.156      ; 1.895      ;
-; -0.751 ; wave_count[13] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.047     ; 1.691      ;
-; -0.751 ; wave_count[12] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.047     ; 1.691      ;
-; -0.749 ; wave_count[0]  ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.027     ; 1.709      ;
-; -0.749 ; wave_count[0]  ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.041     ; 1.695      ;
-; -0.745 ; wave_count[1]  ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.041     ; 1.691      ;
-; -0.741 ; wave_count[17] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.030     ; 1.698      ;
-; -0.738 ; wave_count[2]  ; wave_count[22] ; clk          ; clk         ; 1.000        ; 0.156      ; 1.881      ;
-; -0.737 ; wave_count[29] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.030     ; 1.694      ;
-; -0.736 ; wave_count[20] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.032     ; 1.691      ;
-; -0.734 ; wave_count[28] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.030     ; 1.691      ;
-; -0.731 ; wave_count[0]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.683      ;
-; -0.728 ; wave_count[5]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; 0.156      ; 1.871      ;
-; -0.728 ; wave_count[0]  ; wave_count[18] ; clk          ; clk         ; 1.000        ; 0.156      ; 1.871      ;
-; -0.726 ; wave_count[19] ; wave_count[24] ; clk          ; clk         ; 1.000        ; -0.044     ; 1.669      ;
-; -0.726 ; wave_count[2]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.671      ;
-; -0.726 ; wave_count[0]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.671      ;
-; -0.726 ; wave_count[9]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.037     ; 1.676      ;
-; -0.719 ; wave_count[0]  ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.027     ; 1.679      ;
-; -0.717 ; wave_count[31] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.030     ; 1.674      ;
-; -0.716 ; wave_count[1]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.037     ; 1.666      ;
-; -0.714 ; wave_count[5]  ; wave_count[22] ; clk          ; clk         ; 1.000        ; 0.156      ; 1.857      ;
-; -0.713 ; wave_count[15] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.041     ; 1.659      ;
-; -0.713 ; wave_count[15] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.041     ; 1.659      ;
-; -0.712 ; wave_count[1]  ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.027     ; 1.672      ;
-; -0.712 ; wave_count[19] ; wave_count[22] ; clk          ; clk         ; 1.000        ; -0.044     ; 1.655      ;
-; -0.709 ; wave_count[1]  ; wave_count[27] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.654      ;
-; -0.708 ; wave_count[19] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.237     ; 1.458      ;
-; -0.707 ; wave_count[3]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.659      ;
-; -0.706 ; wave_count[5]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.651      ;
-; -0.706 ; wave_count[3]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.651      ;
-; -0.705 ; wave_count[1]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.650      ;
-; -0.704 ; wave_count[19] ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.242     ; 1.449      ;
-; -0.704 ; wave_count[3]  ; wave_count[18] ; clk          ; clk         ; 1.000        ; 0.156      ; 1.847      ;
-; -0.704 ; wave_count[13] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.051     ; 1.640      ;
-; -0.704 ; wave_count[12] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.051     ; 1.640      ;
-; -0.704 ; wave_count[13] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.051     ; 1.640      ;
-; -0.704 ; wave_count[12] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.051     ; 1.640      ;
-; -0.702 ; wave_count[5]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.647      ;
-; -0.702 ; wave_count[3]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.647      ;
-; -0.701 ; wave_count[6]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.043     ; 1.645      ;
-; -0.700 ; wave_count[19] ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.242     ; 1.445      ;
-; -0.698 ; wave_count[6]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; 0.155      ; 1.840      ;
-; -0.698 ; wave_count[0]  ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.041     ; 1.644      ;
-; -0.696 ; wave_count[4]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.641      ;
-; -0.696 ; wave_count[2]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.641      ;
-; -0.696 ; wave_count[0]  ; wave_count[27] ; clk          ; clk         ; 1.000        ; -0.042     ; 1.641      ;
-; -0.695 ; wave_count[3]  ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.027     ; 1.655      ;
-; -0.691 ; wave_count[3]  ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.027     ; 1.651      ;
-; -0.691 ; wave_count[3]  ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.041     ; 1.637      ;
-; -0.690 ; wave_count[29] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.034     ; 1.643      ;
-; -0.690 ; wave_count[29] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.034     ; 1.643      ;
-; -0.689 ; wave_count[20] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.036     ; 1.640      ;
-; -0.689 ; wave_count[20] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.036     ; 1.640      ;
-; -0.687 ; wave_count[28] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.034     ; 1.640      ;
-; -0.687 ; wave_count[28] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.034     ; 1.640      ;
-; -0.684 ; wave_count[4]  ; wave_count[24] ; clk          ; clk         ; 1.000        ; 0.156      ; 1.827      ;
-; -0.684 ; wave_count[6]  ; wave_count[22] ; clk          ; clk         ; 1.000        ; 0.155      ; 1.826      ;
-; -0.681 ; wave_count[2]  ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.027     ; 1.641      ;
-; -0.681 ; wave_count[2]  ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.041     ; 1.627      ;
-; -0.678 ; wave_count[15] ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.027     ; 1.638      ;
-; -0.678 ; wave_count[15] ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.027     ; 1.638      ;
-; -0.678 ; wave_count[15] ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.027     ; 1.638      ;
-; -0.674 ; wave_count[3]  ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.041     ; 1.620      ;
-; -0.672 ; wave_count[6]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.043     ; 1.616      ;
-; -0.672 ; wave_count[17] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.034     ; 1.625      ;
-; -0.671 ; wave_count[17] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.034     ; 1.624      ;
-; -0.670 ; wave_count[4]  ; wave_count[22] ; clk          ; clk         ; 1.000        ; 0.156      ; 1.813      ;
-; -0.670 ; wave_count[31] ; wave_count[21] ; clk          ; clk         ; 1.000        ; -0.034     ; 1.623      ;
-; -0.670 ; wave_count[31] ; wave_count[20] ; clk          ; clk         ; 1.000        ; -0.034     ; 1.623      ;
-; -0.669 ; wave_count[26] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.030     ; 1.626      ;
-; -0.669 ; wave_count[13] ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.619      ;
-; -0.669 ; wave_count[12] ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.619      ;
-; -0.669 ; wave_count[13] ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.619      ;
-; -0.669 ; wave_count[12] ; wave_count[14] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.619      ;
-; -0.669 ; wave_count[13] ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.619      ;
-; -0.669 ; wave_count[12] ; wave_count[13] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.619      ;
-; -0.665 ; wave_count[0]  ; wave_count[12] ; clk          ; clk         ; 1.000        ; -0.027     ; 1.625      ;
+; -1.399 ; wave_count[1]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.034     ; 2.352      ;
+; -1.375 ; wave_count[5]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.047     ; 2.315      ;
+; -1.342 ; wave_count[3]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.034     ; 2.295      ;
+; -1.329 ; wave_count[4]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.047     ; 2.269      ;
+; -1.303 ; wave_count[1]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.034     ; 2.256      ;
+; -1.297 ; wave_count[1]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.034     ; 2.250      ;
+; -1.295 ; wave_count[7]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.047     ; 2.235      ;
+; -1.281 ; wave_count[2]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.034     ; 2.234      ;
+; -1.279 ; wave_count[5]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.047     ; 2.219      ;
+; -1.273 ; wave_count[5]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.047     ; 2.213      ;
+; -1.272 ; wave_count[7]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.037     ; 2.222      ;
+; -1.268 ; wave_count[7]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.037     ; 2.218      ;
+; -1.265 ; wave_count[6]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.047     ; 2.205      ;
+; -1.256 ; wave_count[14] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.024     ; 2.219      ;
+; -1.255 ; wave_count[12] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.024     ; 2.218      ;
+; -1.252 ; wave_count[14] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.024     ; 2.215      ;
+; -1.251 ; wave_count[12] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.024     ; 2.214      ;
+; -1.248 ; wave_count[0]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.046     ; 2.189      ;
+; -1.246 ; wave_count[3]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.034     ; 2.199      ;
+; -1.240 ; wave_count[3]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.034     ; 2.193      ;
+; -1.238 ; wave_count[1]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.034     ; 2.191      ;
+; -1.228 ; wave_count[4]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.047     ; 2.168      ;
+; -1.227 ; wave_count[1]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.024     ; 2.190      ;
+; -1.227 ; wave_count[4]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.047     ; 2.167      ;
+; -1.219 ; wave_count[4]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.037     ; 2.169      ;
+; -1.215 ; wave_count[4]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.037     ; 2.165      ;
+; -1.214 ; wave_count[5]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.047     ; 2.154      ;
+; -1.213 ; wave_count[0]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.036     ; 2.164      ;
+; -1.209 ; wave_count[0]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.036     ; 2.160      ;
+; -1.203 ; wave_count[5]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.037     ; 2.153      ;
+; -1.202 ; wave_count[5]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.037     ; 2.152      ;
+; -1.199 ; wave_count[7]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.047     ; 2.139      ;
+; -1.198 ; wave_count[5]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.037     ; 2.148      ;
+; -1.193 ; wave_count[7]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.047     ; 2.133      ;
+; -1.186 ; wave_count[19] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.037     ; 2.136      ;
+; -1.182 ; wave_count[19] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.037     ; 2.132      ;
+; -1.181 ; wave_count[3]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.034     ; 2.134      ;
+; -1.179 ; wave_count[2]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.034     ; 2.132      ;
+; -1.179 ; wave_count[2]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.034     ; 2.132      ;
+; -1.170 ; wave_count[3]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.024     ; 2.133      ;
+; -1.163 ; wave_count[4]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.047     ; 2.103      ;
+; -1.163 ; wave_count[6]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.047     ; 2.103      ;
+; -1.158 ; wave_count[6]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.047     ; 2.098      ;
+; -1.157 ; wave_count[17] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.037     ; 2.107      ;
+; -1.153 ; wave_count[17] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.037     ; 2.103      ;
+; -1.152 ; wave_count[4]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.037     ; 2.102      ;
+; -1.146 ; wave_count[0]  ; wave_count[31] ; clk          ; clk         ; 1.000        ; -0.046     ; 2.087      ;
+; -1.143 ; wave_count[15] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.024     ; 2.106      ;
+; -1.139 ; wave_count[15] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.024     ; 2.102      ;
+; -1.139 ; wave_count[18] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.037     ; 2.089      ;
+; -1.137 ; wave_count[9]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.034     ; 2.090      ;
+; -1.135 ; wave_count[18] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.037     ; 2.085      ;
+; -1.134 ; wave_count[7]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.047     ; 2.074      ;
+; -1.132 ; wave_count[11] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.024     ; 2.095      ;
+; -1.128 ; wave_count[11] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.024     ; 2.091      ;
+; -1.123 ; wave_count[6]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.037     ; 2.073      ;
+; -1.123 ; wave_count[7]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.037     ; 2.073      ;
+; -1.119 ; wave_count[6]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.037     ; 2.069      ;
+; -1.117 ; wave_count[0]  ; wave_count[30] ; clk          ; clk         ; 1.000        ; -0.046     ; 2.058      ;
+; -1.117 ; wave_count[13] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.024     ; 2.080      ;
+; -1.114 ; wave_count[2]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.034     ; 2.067      ;
+; -1.113 ; wave_count[24] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.037     ; 2.063      ;
+; -1.113 ; wave_count[13] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.024     ; 2.076      ;
+; -1.109 ; wave_count[24] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.037     ; 2.059      ;
+; -1.106 ; wave_count[1]  ; wave_count[27] ; clk          ; clk         ; 1.000        ; -0.024     ; 2.069      ;
+; -1.103 ; wave_count[2]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.024     ; 2.066      ;
+; -1.099 ; wave_count[7]  ; count[2]       ; clk          ; clk         ; 1.000        ; -0.037     ; 2.049      ;
+; -1.098 ; wave_count[7]  ; count[0]       ; clk          ; clk         ; 1.000        ; -0.037     ; 2.048      ;
+; -1.097 ; wave_count[9]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.024     ; 2.060      ;
+; -1.095 ; wave_count[7]  ; count[3]       ; clk          ; clk         ; 1.000        ; -0.037     ; 2.045      ;
+; -1.093 ; wave_count[6]  ; wave_count[28] ; clk          ; clk         ; 1.000        ; -0.047     ; 2.033      ;
+; -1.093 ; wave_count[9]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.024     ; 2.056      ;
+; -1.091 ; wave_count[2]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.024     ; 2.054      ;
+; -1.087 ; wave_count[2]  ; count[1]       ; clk          ; clk         ; 1.000        ; -0.024     ; 2.050      ;
+; -1.085 ; wave_count[8]  ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.034     ; 2.038      ;
+; -1.083 ; wave_count[7]  ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.037     ; 2.033      ;
+; -1.083 ; wave_count[14] ; count[2]       ; clk          ; clk         ; 1.000        ; -0.024     ; 2.046      ;
+; -1.082 ; wave_count[6]  ; wave_count[26] ; clk          ; clk         ; 1.000        ; -0.037     ; 2.032      ;
+; -1.082 ; wave_count[5]  ; wave_count[27] ; clk          ; clk         ; 1.000        ; -0.037     ; 2.032      ;
+; -1.082 ; wave_count[14] ; count[0]       ; clk          ; clk         ; 1.000        ; -0.024     ; 2.045      ;
+; -1.082 ; wave_count[12] ; count[2]       ; clk          ; clk         ; 1.000        ; -0.024     ; 2.045      ;
+; -1.081 ; wave_count[12] ; count[0]       ; clk          ; clk         ; 1.000        ; -0.024     ; 2.044      ;
+; -1.079 ; wave_count[7]  ; wave_count[5]  ; clk          ; clk         ; 1.000        ; -0.037     ; 2.029      ;
+; -1.079 ; wave_count[14] ; count[3]       ; clk          ; clk         ; 1.000        ; -0.024     ; 2.042      ;
+; -1.078 ; wave_count[25] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.037     ; 2.028      ;
+; -1.078 ; wave_count[12] ; count[3]       ; clk          ; clk         ; 1.000        ; -0.024     ; 2.041      ;
+; -1.077 ; wave_count[7]  ; wave_count[7]  ; clk          ; clk         ; 1.000        ; -0.037     ; 2.027      ;
+; -1.074 ; wave_count[7]  ; wave_count[4]  ; clk          ; clk         ; 1.000        ; -0.037     ; 2.024      ;
+; -1.074 ; wave_count[7]  ; wave_count[6]  ; clk          ; clk         ; 1.000        ; -0.037     ; 2.024      ;
+; -1.074 ; wave_count[25] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.037     ; 2.024      ;
+; -1.073 ; wave_count[11] ; wave_count[29] ; clk          ; clk         ; 1.000        ; -0.034     ; 2.026      ;
+; -1.067 ; wave_count[14] ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.024     ; 2.030      ;
+; -1.066 ; wave_count[16] ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.037     ; 2.016      ;
+; -1.066 ; wave_count[12] ; wave_count[16] ; clk          ; clk         ; 1.000        ; -0.024     ; 2.029      ;
+; -1.063 ; wave_count[14] ; wave_count[5]  ; clk          ; clk         ; 1.000        ; -0.024     ; 2.026      ;
+; -1.062 ; wave_count[16] ; count[1]       ; clk          ; clk         ; 1.000        ; -0.037     ; 2.012      ;
+; -1.062 ; wave_count[12] ; wave_count[5]  ; clk          ; clk         ; 1.000        ; -0.024     ; 2.025      ;
+; -1.061 ; wave_count[14] ; wave_count[7]  ; clk          ; clk         ; 1.000        ; -0.024     ; 2.024      ;
+; -1.060 ; wave_count[12] ; wave_count[7]  ; clk          ; clk         ; 1.000        ; -0.024     ; 2.023      ;
+; -1.058 ; wave_count[1]  ; wave_count[0]  ; clk          ; clk         ; 1.000        ; -0.024     ; 2.021      ;
 +--------+----------------+----------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -815,106 +815,106 @@ No paths to report.
 +-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node      ; To Node        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
-; 0.179 ; count[3]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.307      ;
-; 0.179 ; count[2]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.307      ;
-; 0.179 ; count[1]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.307      ;
-; 0.179 ; count[0]       ; count[0]       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.307      ;
-; 0.302 ; wave_count[15] ; wave_count[15] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.423      ;
-; 0.303 ; wave_count[5]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.424      ;
-; 0.303 ; wave_count[3]  ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.424      ;
-; 0.303 ; wave_count[1]  ; wave_count[1]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.424      ;
-; 0.304 ; wave_count[7]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
-; 0.305 ; wave_count[31] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.424      ;
-; 0.305 ; wave_count[9]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
-; 0.305 ; wave_count[8]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
-; 0.305 ; wave_count[4]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
-; 0.305 ; wave_count[2]  ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
-; 0.306 ; wave_count[29] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.425      ;
-; 0.306 ; wave_count[27] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.425      ;
-; 0.306 ; wave_count[17] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.425      ;
-; 0.306 ; wave_count[10] ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.427      ;
-; 0.307 ; wave_count[23] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.426      ;
-; 0.307 ; wave_count[25] ; wave_count[25] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.426      ;
-; 0.308 ; wave_count[30] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.427      ;
-; 0.309 ; wave_count[28] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.428      ;
-; 0.309 ; wave_count[26] ; wave_count[26] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.428      ;
-; 0.333 ; count[1]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.461      ;
-; 0.333 ; count[0]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.461      ;
-; 0.336 ; count[0]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.464      ;
-; 0.449 ; count[0]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.577      ;
-; 0.452 ; wave_count[3]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.573      ;
-; 0.452 ; wave_count[1]  ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.573      ;
-; 0.453 ; wave_count[7]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.574      ;
-; 0.454 ; wave_count[9]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.575      ;
-; 0.455 ; wave_count[29] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.574      ;
-; 0.455 ; wave_count[27] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.574      ;
-; 0.456 ; wave_count[25] ; wave_count[26] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.575      ;
-; 0.463 ; wave_count[4]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.584      ;
-; 0.463 ; wave_count[2]  ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.584      ;
-; 0.463 ; wave_count[0]  ; wave_count[1]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.584      ;
-; 0.463 ; wave_count[8]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.584      ;
-; 0.466 ; wave_count[30] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.585      ;
-; 0.466 ; wave_count[2]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.587      ;
-; 0.466 ; wave_count[0]  ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.587      ;
-; 0.466 ; wave_count[8]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.587      ;
-; 0.467 ; wave_count[28] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.586      ;
-; 0.467 ; wave_count[26] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.586      ;
-; 0.470 ; wave_count[28] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.589      ;
-; 0.470 ; wave_count[26] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.589      ;
-; 0.478 ; count[2]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.606      ;
-; 0.488 ; count[1]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.616      ;
-; 0.515 ; wave_count[5]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.636      ;
-; 0.515 ; wave_count[3]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.636      ;
-; 0.515 ; wave_count[1]  ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.636      ;
-; 0.516 ; wave_count[7]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.637      ;
-; 0.518 ; wave_count[5]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.639      ;
-; 0.518 ; wave_count[29] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.637      ;
-; 0.518 ; wave_count[1]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.639      ;
-; 0.518 ; wave_count[27] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.637      ;
-; 0.519 ; wave_count[23] ; wave_count[25] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.638      ;
-; 0.519 ; wave_count[7]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.640      ;
-; 0.519 ; wave_count[25] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.638      ;
-; 0.521 ; wave_count[15] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.030      ; 0.635      ;
-; 0.521 ; wave_count[27] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.640      ;
-; 0.522 ; wave_count[23] ; wave_count[26] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.641      ;
-; 0.522 ; wave_count[25] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.641      ;
-; 0.529 ; wave_count[4]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.650      ;
-; 0.529 ; wave_count[2]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.650      ;
-; 0.529 ; wave_count[0]  ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.650      ;
-; 0.532 ; wave_count[4]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.653      ;
-; 0.532 ; wave_count[0]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.653      ;
-; 0.533 ; wave_count[28] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.652      ;
-; 0.533 ; wave_count[26] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.652      ;
-; 0.534 ; wave_count[6]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.035      ; 0.653      ;
-; 0.536 ; wave_count[26] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.655      ;
-; 0.537 ; wave_count[6]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.035      ; 0.656      ;
-; 0.581 ; wave_count[5]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.702      ;
-; 0.581 ; wave_count[3]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.702      ;
-; 0.581 ; wave_count[1]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.702      ;
-; 0.582 ; wave_count[16] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.235      ; 0.901      ;
-; 0.584 ; wave_count[5]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.705      ;
-; 0.584 ; wave_count[3]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.705      ;
-; 0.584 ; wave_count[27] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.703      ;
-; 0.585 ; wave_count[14] ; wave_count[15] ; clk          ; clk         ; 0.000        ; 0.027      ; 0.696      ;
-; 0.585 ; wave_count[23] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.704      ;
-; 0.585 ; wave_count[25] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.704      ;
-; 0.588 ; wave_count[23] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.707      ;
-; 0.588 ; wave_count[25] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.707      ;
-; 0.590 ; wave_count[21] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.034      ; 0.708      ;
-; 0.595 ; wave_count[4]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.716      ;
-; 0.595 ; wave_count[2]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.716      ;
-; 0.595 ; wave_count[0]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.716      ;
-; 0.596 ; wave_count[10] ; wave_count[15] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.717      ;
-; 0.598 ; wave_count[4]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.719      ;
-; 0.598 ; wave_count[2]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.719      ;
-; 0.599 ; wave_count[26] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.718      ;
-; 0.600 ; wave_count[6]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.035      ; 0.719      ;
-; 0.601 ; wave_count[21] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.721      ;
-; 0.603 ; wave_count[6]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.035      ; 0.722      ;
-; 0.607 ; wave_count[11] ; wave_count[11] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.727      ;
-; 0.608 ; wave_count[20] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.728      ;
-; 0.615 ; wave_count[23] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.242      ; 0.941      ;
-; 0.618 ; wave_count[20] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.034      ; 0.736      ;
+; 0.186 ; wave_count[4]  ; wave_count[4]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; wave_count[5]  ; wave_count[5]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; wave_count[6]  ; wave_count[6]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; wave_count[7]  ; wave_count[7]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; wave_count[16] ; wave_count[16] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; wave_count[17] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; wave_count[18] ; wave_count[18] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; wave_count[19] ; wave_count[19] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; wave_count[24] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; wave_count[25] ; wave_count[25] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; wave_count[26] ; wave_count[26] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; wave_count[27] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.187 ; count[0]       ; count[0]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[8]  ; wave_count[8]  ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[1]  ; wave_count[1]  ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[2]  ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[3]  ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[9]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[10] ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[11] ; wave_count[11] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[13] ; wave_count[13] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[12] ; wave_count[12] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[14] ; wave_count[14] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[15] ; wave_count[15] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[20] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[21] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[22] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[23] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[29] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[28] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[30] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; wave_count[31] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; count[1]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; count[2]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; count[3]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.231 ; count[0]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.351      ;
+; 0.486 ; count[0]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.606      ;
+; 0.486 ; count[0]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.606      ;
+; 0.547 ; count[1]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.667      ;
+; 0.548 ; count[1]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.668      ;
+; 0.621 ; count[2]       ; count[3]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.741      ;
+; 0.642 ; count[3]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.762      ;
+; 0.662 ; count[3]       ; count[2]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.782      ;
+; 0.685 ; count[2]       ; count[1]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.805      ;
+; 0.748 ; wave_count[18] ; wave_count[19] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.869      ;
+; 0.749 ; wave_count[0]  ; wave_count[1]  ; clk          ; clk         ; 0.000        ; 0.024      ; 0.857      ;
+; 0.751 ; wave_count[17] ; wave_count[18] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.872      ;
+; 0.753 ; wave_count[16] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.874      ;
+; 0.757 ; wave_count[24] ; wave_count[25] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.878      ;
+; 0.762 ; wave_count[16] ; wave_count[18] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.883      ;
+; 0.773 ; wave_count[26] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.894      ;
+; 0.778 ; count[0]       ; wave_count[16] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.899      ;
+; 0.794 ; wave_count[23] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.047      ; 0.925      ;
+; 0.799 ; wave_count[0]  ; wave_count[0]  ; clk          ; clk         ; 0.000        ; 0.036      ; 0.919      ;
+; 0.801 ; wave_count[27] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.026      ; 0.911      ;
+; 0.803 ; wave_count[18] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.026      ; 0.913      ;
+; 0.805 ; wave_count[17] ; wave_count[19] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.926      ;
+; 0.807 ; wave_count[22] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.047      ; 0.938      ;
+; 0.807 ; wave_count[19] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.026      ; 0.917      ;
+; 0.816 ; wave_count[16] ; wave_count[19] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.937      ;
+; 0.820 ; wave_count[29] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.940      ;
+; 0.823 ; wave_count[24] ; wave_count[27] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.944      ;
+; 0.824 ; wave_count[29] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.944      ;
+; 0.827 ; wave_count[29] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.947      ;
+; 0.827 ; wave_count[29] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.947      ;
+; 0.828 ; wave_count[29] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.948      ;
+; 0.830 ; wave_count[26] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.026      ; 0.940      ;
+; 0.839 ; count[1]       ; wave_count[16] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.960      ;
+; 0.842 ; wave_count[13] ; wave_count[14] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.962      ;
+; 0.842 ; wave_count[21] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.962      ;
+; 0.844 ; wave_count[29] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.964      ;
+; 0.844 ; wave_count[21] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.047      ; 0.975      ;
+; 0.844 ; wave_count[22] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.964      ;
+; 0.845 ; wave_count[8]  ; wave_count[9]  ; clk          ; clk         ; 0.000        ; 0.036      ; 0.965      ;
+; 0.848 ; wave_count[22] ; wave_count[28] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.968      ;
+; 0.851 ; wave_count[22] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.971      ;
+; 0.851 ; wave_count[22] ; wave_count[23] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.971      ;
+; 0.852 ; wave_count[20] ; wave_count[21] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.972      ;
+; 0.853 ; wave_count[22] ; wave_count[29] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.973      ;
+; 0.855 ; wave_count[20] ; wave_count[22] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.975      ;
+; 0.857 ; wave_count[8]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.977      ;
+; 0.857 ; wave_count[20] ; wave_count[24] ; clk          ; clk         ; 0.000        ; 0.047      ; 0.988      ;
+; 0.858 ; wave_count[9]  ; wave_count[10] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.978      ;
+; 0.859 ; wave_count[14] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.049      ; 0.992      ;
+; 0.860 ; wave_count[10] ; wave_count[11] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.980      ;
+; 0.860 ; wave_count[17] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.026      ; 0.970      ;
+; 0.861 ; wave_count[29] ; wave_count[3]  ; clk          ; clk         ; 0.000        ; 0.034      ; 0.979      ;
+; 0.861 ; wave_count[30] ; wave_count[31] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.981      ;
+; 0.862 ; wave_count[11] ; wave_count[12] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.982      ;
+; 0.863 ; wave_count[15] ; wave_count[17] ; clk          ; clk         ; 0.000        ; 0.049      ; 0.996      ;
+; 0.865 ; wave_count[27] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.026      ; 0.975      ;
+; 0.867 ; wave_count[23] ; wave_count[25] ; clk          ; clk         ; 0.000        ; 0.047      ; 0.998      ;
+; 0.868 ; wave_count[14] ; wave_count[18] ; clk          ; clk         ; 0.000        ; 0.049      ; 1.001      ;
+; 0.869 ; wave_count[0]  ; wave_count[2]  ; clk          ; clk         ; 0.000        ; 0.024      ; 0.977      ;
+; 0.869 ; wave_count[28] ; wave_count[30] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.989      ;
+; 0.870 ; wave_count[24] ; wave_count[26] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.991      ;
+; 0.870 ; wave_count[31] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.990      ;
+; 0.871 ; wave_count[12] ; wave_count[14] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.991      ;
+; 0.871 ; wave_count[16] ; wave_count[20] ; clk          ; clk         ; 0.000        ; 0.026      ; 0.981      ;
+; 0.871 ; wave_count[10] ; wave_count[12] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.991      ;
 +-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -924,16 +924,16 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+-------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                           ;
-+------------------+---------+-------+----------+---------+---------------------+
-; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -3.201  ; 0.179 ; N/A      ; N/A     ; -3.000              ;
-;  clk             ; -3.201  ; 0.179 ; N/A      ; N/A     ; -3.000              ;
-; Design-wide TNS  ; -87.983 ; 0.0   ; 0.0      ; 0.0     ; -56.532             ;
-;  clk             ; -87.983 ; 0.000 ; N/A      ; N/A     ; -56.532             ;
-+------------------+---------+-------+----------+---------+---------------------+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++------------------+----------+-------+----------+---------+---------------------+
+; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -4.360   ; 0.186 ; N/A      ; N/A     ; -3.000              ;
+;  clk             ; -4.360   ; 0.186 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -130.645 ; 0.0   ; 0.0      ; 0.0     ; -56.532             ;
+;  clk             ; -130.645 ; 0.000 ; N/A      ; N/A     ; -56.532             ;
++------------------+----------+-------+----------+---------+---------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1025,7 +1025,7 @@ No synchronizer chains to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 1082     ; 0        ; 0        ; 0        ;
+; clk        ; clk      ; 1936     ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1035,7 +1035,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 1082     ; 0        ; 0        ; 0        ;
+; clk        ; clk      ; 1936     ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1111,11 +1111,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Jan 08 17:05:37 2022
+    Info: Processing started: Sat Jan 08 22:11:47 2022
 Info: Command: quartus_sta clk_counter_with_disp -c clk_counter_with_disp
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'clk_counter_with_disp.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -1128,14 +1128,14 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.201
+Info (332146): Worst-case setup slack is -4.360
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.201             -87.983 clk 
-Info (332146): Worst-case hold slack is 0.433
+    Info (332119):    -4.360            -130.645 clk 
+Info (332146): Worst-case hold slack is 0.452
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.433               0.000 clk 
+    Info (332119):     0.452               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -1148,14 +1148,14 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.915
+Info (332146): Worst-case setup slack is -3.922
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.915             -76.920 clk 
-Info (332146): Worst-case hold slack is 0.383
+    Info (332119):    -3.922            -118.611 clk 
+Info (332146): Worst-case hold slack is 0.401
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.383               0.000 clk 
+    Info (332119):     0.401               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -1166,26 +1166,26 @@ Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.867
+Info (332146): Worst-case setup slack is -1.399
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.867             -18.675 clk 
-Info (332146): Worst-case hold slack is 0.179
+    Info (332119):    -1.399             -37.652 clk 
+Info (332146): Worst-case hold slack is 0.186
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.179               0.000 clk 
+    Info (332119):     0.186               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -41.536 clk 
+    Info (332119):    -3.000             -41.337 clk 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4804 megabytes
-    Info: Processing ended: Sat Jan 08 17:05:38 2022
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4755 megabytes
+    Info: Processing ended: Sat Jan 08 22:11:49 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

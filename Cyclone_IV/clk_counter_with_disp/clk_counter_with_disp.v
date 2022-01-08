@@ -16,9 +16,9 @@ module clk_counter_with_disp(input wire clk, output wire [6:0]seg, output wire n
 			wave_count = 0;
 			count = count + 1;
 		end
-//		else if (count == 9) begin 
-//			count = 0;
-//		end
+		else if (count == 10) begin 
+			count = 0;
+		end
 		else begin
 			wave_count = wave_count + 1;
 		end

@@ -35,14 +35,14 @@ clk => wave_count[28].CLK
 clk => wave_count[29].CLK
 clk => wave_count[30].CLK
 clk => wave_count[31].CLK
-seg[0] << seven_segment_disp:U0.seg[0]
-seg[1] << seven_segment_disp:U0.seg[1]
-seg[2] << seven_segment_disp:U0.seg[2]
-seg[3] << seven_segment_disp:U0.seg[3]
-seg[4] << seven_segment_disp:U0.seg[4]
-seg[5] << seven_segment_disp:U0.seg[5]
-seg[6] << seven_segment_disp:U0.seg[6]
-n_segment << seven_segment_disp:U0.n_segment
+seg[0] <= seven_segment_disp:U0.seg[0]
+seg[1] <= seven_segment_disp:U0.seg[1]
+seg[2] <= seven_segment_disp:U0.seg[2]
+seg[3] <= seven_segment_disp:U0.seg[3]
+seg[4] <= seven_segment_disp:U0.seg[4]
+seg[5] <= seven_segment_disp:U0.seg[5]
+seg[6] <= seven_segment_disp:U0.seg[6]
+n_segment <= seven_segment_disp:U0.n_segment
 
 
 |clk_counter_with_disp|seven_segment_disp:U0

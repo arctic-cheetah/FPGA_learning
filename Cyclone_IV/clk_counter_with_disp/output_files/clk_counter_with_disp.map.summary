@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sat Jan 08 17:05:29 2022
+Analysis & Synthesis Status : Successful - Sat Jan 08 22:11:38 2022
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : clk_counter_with_disp
 Top-level Entity Name : clk_counter_with_disp
 Family : Cyclone IV E
-Total logic elements : 68
-    Total combinational functions : 68
+Total logic elements : 91
+    Total combinational functions : 91
     Dedicated logic registers : 36
 Total registers : 36
 Total pins : 9

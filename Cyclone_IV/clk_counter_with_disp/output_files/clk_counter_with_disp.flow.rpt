@@ -1,5 +1,5 @@
 Flow report for clk_counter_with_disp
-Sat Jan 08 17:05:40 2022
+Sat Jan 08 22:11:50 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Jan 08 17:05:40 2022       ;
+; Flow Status                        ; Successful - Sat Jan 08 22:11:50 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; clk_counter_with_disp                       ;
 ; Top-level Entity Name              ; clk_counter_with_disp                       ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 68 / 6,272 ( 1 % )                          ;
-;     Total combinational functions  ; 68 / 6,272 ( 1 % )                          ;
+; Total logic elements               ; 91 / 6,272 ( 1 % )                          ;
+;     Total combinational functions  ; 91 / 6,272 ( 1 % )                          ;
 ;     Dedicated logic registers      ; 36 / 6,272 ( < 1 % )                        ;
 ; Total registers                    ; 36                                          ;
 ; Total pins                         ; 9 / 92 ( 10 % )                             ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+-----------------------+
 ; Option            ; Setting               ;
 +-------------------+-----------------------+
-; Start date & time ; 01/08/2022 17:05:21   ;
+; Start date & time ; 01/08/2022 22:11:28   ;
 ; Main task         ; Compilation           ;
 ; Revision Name     ; clk_counter_with_disp ;
 +-------------------+-----------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 141812764015801.164162192148488        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 963351282056.164164028804364           ; --            ; --          ; --                                ;
 ; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL      ; Precision Synthesis                    ; <None>        ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; clc_counter_tb                    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
@@ -110,12 +110,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4801 MB             ; 00:00:19                           ;
-; Fitter               ; 00:00:04     ; 1.0                     ; 5806 MB             ; 00:00:05                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4680 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4804 MB             ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4753 MB             ; 00:00:21                           ;
+; Fitter               ; 00:00:05     ; 1.0                     ; 5504 MB             ; 00:00:05                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4679 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4755 MB             ; 00:00:02                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4639 MB             ; 00:00:01                           ;
-; Total                ; 00:00:15     ; --                      ; --                  ; 00:00:27                           ;
+; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:30                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -124,11 +124,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; Metabox          ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; Metabox          ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; Metabox          ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; Metabox          ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Metabox          ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-730      ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-730      ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-730      ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-730      ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-730      ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
