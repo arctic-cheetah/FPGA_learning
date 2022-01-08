@@ -1,0 +1,30 @@
+|clk_counter_switch_dp
+sw_add => count[0].CLK
+sw_add => count[1].CLK
+sw_add => count[2].CLK
+sw_add => count[3].CLK
+seg[0] << seven_segment_disp:disp.seg[0]
+seg[1] << seven_segment_disp:disp.seg[1]
+seg[2] << seven_segment_disp:disp.seg[2]
+seg[3] << seven_segment_disp:disp.seg[3]
+seg[4] << seven_segment_disp:disp.seg[4]
+seg[5] << seven_segment_disp:disp.seg[5]
+seg[6] << seven_segment_disp:disp.seg[6]
+n_segment << seven_segment_disp:disp.n_segment
+
+
+|clk_counter_switch_dp|seven_segment_disp:disp
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+n_segment <= <GND>
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+
+
