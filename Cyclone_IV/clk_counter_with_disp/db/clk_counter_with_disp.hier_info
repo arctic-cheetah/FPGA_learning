@@ -1,0 +1,62 @@
+|clk_counter_with_disp
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => wave_count[0].CLK
+clk => wave_count[1].CLK
+clk => wave_count[2].CLK
+clk => wave_count[3].CLK
+clk => wave_count[4].CLK
+clk => wave_count[5].CLK
+clk => wave_count[6].CLK
+clk => wave_count[7].CLK
+clk => wave_count[8].CLK
+clk => wave_count[9].CLK
+clk => wave_count[10].CLK
+clk => wave_count[11].CLK
+clk => wave_count[12].CLK
+clk => wave_count[13].CLK
+clk => wave_count[14].CLK
+clk => wave_count[15].CLK
+clk => wave_count[16].CLK
+clk => wave_count[17].CLK
+clk => wave_count[18].CLK
+clk => wave_count[19].CLK
+clk => wave_count[20].CLK
+clk => wave_count[21].CLK
+clk => wave_count[22].CLK
+clk => wave_count[23].CLK
+clk => wave_count[24].CLK
+clk => wave_count[25].CLK
+clk => wave_count[26].CLK
+clk => wave_count[27].CLK
+clk => wave_count[28].CLK
+clk => wave_count[29].CLK
+clk => wave_count[30].CLK
+clk => wave_count[31].CLK
+seg[0] <= seven_segment_disp:U0.seg[0]
+seg[1] <= seven_segment_disp:U0.seg[1]
+seg[2] <= seven_segment_disp:U0.seg[2]
+seg[3] <= seven_segment_disp:U0.seg[3]
+seg[4] <= seven_segment_disp:U0.seg[4]
+seg[5] <= seven_segment_disp:U0.seg[5]
+seg[6] <= seven_segment_disp:U0.seg[6]
+n_segment <= seven_segment_disp:U0.n_segment
+
+
+|clk_counter_with_disp|seven_segment_disp:U0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+n_segment <= <GND>
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+
+
