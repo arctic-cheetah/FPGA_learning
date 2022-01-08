@@ -1,0 +1,84 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/simulation/modelsim
+vfour_digit_seven_segment_test
+Z1 !s110 1641680625
+!i10b 1
+!s100 Rbg_OL;<dIUOgO;N7`WM[0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IGE>c9dMMkWNND`^LoX[m=0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1641680584
+8C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/four_digit_seven_segment_test.v
+FC:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/four_digit_seven_segment_test.v
+!i122 0
+L0 1 41
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1641680625.000000
+!s107 C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/four_digit_seven_segment_test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test|C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/four_digit_seven_segment_test.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test
+Z8 tCvgOpt 0
+vfour_digit_seven_segment_test_TB
+R1
+!i10b 1
+!s100 zXcPheelo^CzdhjdRDAgc2
+R2
+INJ]zXEMW_aPzkFcj6Lo]g3
+R3
+R0
+w1641680185
+8C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/four_digit_seven_segment_test_TB.v
+FC:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/four_digit_seven_segment_test_TB.v
+!i122 2
+L0 1 14
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/four_digit_seven_segment_test_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test|C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/four_digit_seven_segment_test_TB.v|
+!i113 1
+R6
+R7
+R8
+nfour_digit_seven_segment_test_@t@b
+vseven_segment_disp
+R1
+!i10b 1
+!s100 VZ96ghR^nT3Ln=?`D:BEd3
+R2
+IITJn>Xb]VjTi]^:^K86j40
+R3
+R0
+w1641678463
+8C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/seven_segment_disp.v
+FC:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/seven_segment_disp.v
+!i122 1
+L0 1 29
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/seven_segment_disp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test|C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/seven_segment_disp.v|
+!i113 1
+R6
+R7
+R8

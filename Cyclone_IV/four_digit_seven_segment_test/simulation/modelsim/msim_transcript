@@ -1,0 +1,61 @@
+# Reading pref.tcl
+# do four_digit_seven_segment_test_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test {C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/four_digit_seven_segment_test.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:23:45 on Jan 09,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test" C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/four_digit_seven_segment_test.v 
+# -- Compiling module four_digit_seven_segment_test
+# 
+# Top level modules:
+# 	four_digit_seven_segment_test
+# End time: 09:23:45 on Jan 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test {C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/seven_segment_disp.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:23:45 on Jan 09,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test" C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/seven_segment_disp.v 
+# -- Compiling module seven_segment_disp
+# 
+# Top level modules:
+# 	seven_segment_disp
+# End time: 09:23:45 on Jan 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test {C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/four_digit_seven_segment_test_TB.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:23:45 on Jan 09,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test" C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/four_digit_seven_segment_test_TB.v 
+# -- Compiling module four_digit_seven_segment_test_TB
+# 
+# Top level modules:
+# 	four_digit_seven_segment_test_TB
+# End time: 09:23:45 on Jan 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  four_digit_seven_segment_test_TB
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" four_digit_seven_segment_test_TB 
+# Start time: 09:23:45 on Jan 09,2022
+# Loading work.four_digit_seven_segment_test_TB
+# Loading work.four_digit_seven_segment_test
+# Loading work.seven_segment_disp
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit
+# Break in Module four_digit_seven_segment_test_TB at C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/four_digit_seven_segment_test/four_digit_seven_segment_test_TB.v line 10
+# End time: 09:24:27 on Jan 09,2022, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 0

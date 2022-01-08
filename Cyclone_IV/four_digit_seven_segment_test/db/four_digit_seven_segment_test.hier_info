@@ -1,0 +1,68 @@
+|four_digit_seven_segment_test
+clk => bcd[0].CLK
+clk => bcd[1].CLK
+clk => bcd[2].CLK
+clk => bcd[3].CLK
+clk => n_digit[0]~reg0.CLK
+clk => n_digit[1]~reg0.CLK
+clk => n_digit[2]~reg0.CLK
+clk => n_digit[3]~reg0.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
+clk => count[27].CLK
+clk => count[28].CLK
+clk => count[29].CLK
+clk => count[30].CLK
+clk => count[31].CLK
+seg[0] <= seven_segment_disp:dipslay.seg[0]
+seg[1] <= seven_segment_disp:dipslay.seg[1]
+seg[2] <= seven_segment_disp:dipslay.seg[2]
+seg[3] <= seven_segment_disp:dipslay.seg[3]
+seg[4] <= seven_segment_disp:dipslay.seg[4]
+seg[5] <= seven_segment_disp:dipslay.seg[5]
+seg[6] <= seven_segment_disp:dipslay.seg[6]
+n_digit[0] <= n_digit[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+n_digit[1] <= n_digit[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+n_digit[2] <= n_digit[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+n_digit[3] <= n_digit[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_digit_seven_segment_test|seven_segment_disp:dipslay
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+
+

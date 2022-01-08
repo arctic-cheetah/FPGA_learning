@@ -1,0 +1,10 @@
+module four_digit_seven_segment_test_TB();
+
+	reg clk = 0;
+	
+	initial begin
+		forever #20 clk = ~clk;
+	
+	end
+
+endmodule;

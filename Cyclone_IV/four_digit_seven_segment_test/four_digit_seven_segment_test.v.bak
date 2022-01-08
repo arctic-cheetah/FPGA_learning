@@ -1,0 +1,3 @@
+module four_digit_seven_segment_test(input wire clk,);
+	
+endmodule
