@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at clk_divider.v(8): always construct contains both blocking and non-blocking assignments File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/switch_debounce/clk_divider.v Line: 8

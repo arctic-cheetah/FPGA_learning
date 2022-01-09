@@ -1,0 +1,5 @@
+//A program to debounce a SPST switch
+module switch_debounce(input wire sw, clk);
+
+
+endmodule

@@ -1,0 +1,3 @@
+module clk_divider(input wire clk, output reg new_clk);
+	
+endmodule

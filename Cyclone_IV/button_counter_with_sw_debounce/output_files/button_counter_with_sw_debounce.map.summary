@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Jan 09 18:51:19 2022
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : button_counter_with_sw_debounce
+Top-level Entity Name : button_counter_with_sw_debounce
+Family : Cyclone IV E
+Total logic elements : 103
+    Total combinational functions : 101
+    Dedicated logic registers : 67
+Total registers : 67
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
