@@ -1,9 +1,9 @@
 module seven_segment_disp (output reg [6:0]seg, output wire n_segment, input wire [3:0]bcd);
 
 	assign n_segment = 0;
-	wire [3:0] neg_bcd;
+	//wire [3:0] neg_bcd;
 	//Sw is pullup high, therefore negate it
-	assign neg_bcd = ~bcd;
+	//assign neg_bcd = ~bcd;
 	//Seven segment display is pulled up. Therefore this also needs to be negated
 	always @(bcd) begin
 		case (bcd)

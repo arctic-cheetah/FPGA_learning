@@ -1,0 +1,7 @@
+//A program to display the number of button presses
+//on a seven segment display
+
+module button_counter_4_digits(input wire clk, sw_add);
+
+
+endmodule

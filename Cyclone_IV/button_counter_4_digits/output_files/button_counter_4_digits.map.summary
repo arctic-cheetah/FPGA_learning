@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Jan 09 23:48:08 2022
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : button_counter_4_digits
+Top-level Entity Name : button_counter_4_digits
+Family : Cyclone IV E
+Total logic elements : 289
+    Total combinational functions : 287
+    Dedicated logic registers : 91
+Total registers : 91
+Total pins : 13
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
