@@ -1,7 +1,7 @@
 //A program to display the a number increasing by following the clk
 //on a seven segment display
 
-module clk_counter_4_digits(input wire clk, sw_add, output wire [6:0] seg, output reg [3:0] n_digit);
+module clk_counter_4_digits(input wire clk, sw_add, sw_reset, output wire [6:0] seg, output reg [3:0] n_digit);
 	localparam W = 16;
 	reg [15:0] btn_count = 0;
 	reg [W+(W-4)/3:0] bcd = 0;
@@ -12,8 +12,8 @@ module clk_counter_4_digits(input wire clk, sw_add, output wire [6:0] seg, outpu
 	localparam FREQ = 50000000; //50 Mhz
 	localparam HZ = 240; //This is in hz if 1/s 240 / 4 (digits) = 60Hz refresh rate
 	localparam REFRESH_CYCLE = FREQ / 2 / HZ;//Need a quick refresh rate
-	localparam INCREMENT_SEC = 5;
-	localparam INCREMENT_CYCLE = FREQ / 2 / INCREMENT_SEC;
+	localparam INCREMENT_SEC = 2;
+	localparam INCREMENT_CYCLE = FREQ / 2 * INCREMENT_SEC;
 	
 	reg [31:0] increment_count = 0;
 	reg [31:0] refresh_disp_count = 0;
@@ -38,8 +38,13 @@ module clk_counter_4_digits(input wire clk, sw_add, output wire [6:0] seg, outpu
 		refresh_disp_count = refresh_disp_count + 1;
 		increment_count = increment_count + 1;
 		
+		//Check if the count must be reset
+		if (!sw_reset) begin 
+			btn_count = 0;
+			increment_count = 0;
+		end
 		//Increment the button count every second
-		if (increment_count == INCREMENT_CYCLE) begin 
+		else if (increment_count == INCREMENT_CYCLE) begin 
 			btn_count = btn_count + 1;
 			increment_count = 0;
 		end
@@ -71,5 +76,6 @@ module clk_counter_4_digits(input wire clk, sw_add, output wire [6:0] seg, outpu
 		
 		
 	end
+
 
 endmodule

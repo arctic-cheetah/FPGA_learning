@@ -1,15 +1,15 @@
-Fitter Status : Successful - Sun Jan 09 23:48:14 2022
+Fitter Status : Successful - Mon Jan 10 13:02:53 2022
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : button_counter_4_digits
 Top-level Entity Name : button_counter_4_digits
 Family : Cyclone IV E
 Device : EP4CE6E22C8
 Timing Models : Final
-Total logic elements : 289 / 6,272 ( 5 % )
+Total logic elements : 290 / 6,272 ( 5 % )
     Total combinational functions : 287 / 6,272 ( 5 % )
     Dedicated logic registers : 91 / 6,272 ( 1 % )
 Total registers : 91
-Total pins : 13 / 92 ( 14 % )
+Total pins : 14 / 92 ( 15 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )

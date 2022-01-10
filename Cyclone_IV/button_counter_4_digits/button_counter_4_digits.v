@@ -1,7 +1,7 @@
 //A program to display the number of button presses
 //on a seven segment display
 
-module button_counter_4_digits(input wire clk, sw_add, output wire [6:0] seg, output reg [3:0] n_digit);
+module button_counter_4_digits(input wire clk, sw_add, sw_reset, output wire [6:0] seg, output reg [3:0] n_digit);
 	localparam W = 16;
 	reg [15:0] btn_count = 0;
 	reg [W+(W-4)/3:0] bcd = 0;
@@ -67,8 +67,17 @@ module button_counter_4_digits(input wire clk, sw_add, output wire [6:0] seg, ou
 	end
 	
 	//Increment the button count every press
-	always @ (posedge sw_add_db) begin 
+	//Reset the count if sw_reset is pressed
+	always @ (posedge sw_add_db, negedge sw_reset) begin 
+	   //sw_reset is pulled up 
+		if (!sw_reset) begin
+			btn_count = 0;
+		end
+		else begin
 			btn_count = btn_count + 1;
+		end
+			
 	end
+	
 
 endmodule

@@ -1,5 +1,5 @@
 Flow report for clk_counter_4_digits
-Sun Jan 09 23:38:44 2022
+Mon Jan 10 12:44:49 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Jan 09 23:38:44 2022       ;
+; Flow Status                        ; Successful - Mon Jan 10 12:44:49 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; clk_counter_4_digits                        ;
 ; Top-level Entity Name              ; clk_counter_4_digits                        ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 283 / 6,272 ( 5 % )                         ;
-;     Total combinational functions  ; 283 / 6,272 ( 5 % )                         ;
-;     Dedicated logic registers      ; 86 / 6,272 ( 1 % )                          ;
-; Total registers                    ; 86                                          ;
-; Total pins                         ; 13 / 92 ( 14 % )                            ;
+; Total logic elements               ; 307 / 6,272 ( 5 % )                         ;
+;     Total combinational functions  ; 307 / 6,272 ( 5 % )                         ;
+;     Dedicated logic registers      ; 88 / 6,272 ( 1 % )                          ;
+; Total registers                    ; 88                                          ;
+; Total pins                         ; 14 / 92 ( 15 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 01/09/2022 23:38:23  ;
+; Start date & time ; 01/10/2022 12:44:27  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; clk_counter_4_digits ;
 +-------------------+----------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 963354560519.164173190304684           ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 963354560519.164177906736760           ; --            ; --          ; --                                ;
 ; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Precision Synthesis                    ; <None>        ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_timing_analysis               ;
@@ -104,11 +104,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4803 MB             ; 00:00:21                           ;
-; Fitter               ; 00:00:05     ; 1.1                     ; 5810 MB             ; 00:00:05                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4680 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.1                     ; 4807 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4641 MB             ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4800 MB             ; 00:00:21                           ;
+; Fitter               ; 00:00:05     ; 1.1                     ; 5810 MB             ; 00:00:06                           ;
+; Assembler            ; 00:00:00     ; 1.0                     ; 4680 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4807 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4638 MB             ; 00:00:01                           ;
 ; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:30                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 

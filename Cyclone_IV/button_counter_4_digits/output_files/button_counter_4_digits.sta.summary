@@ -3,16 +3,16 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -15.166
-TNS   : -295.945
+Slack : -14.952
+TNS   : -292.634
 
 Type  : Slow 1200mV 85C Model Setup 'switch_debounce:db|d_ff:D0|Q'
-Slack : -2.021
-TNS   : -22.539
+Slack : -1.999
+TNS   : -21.698
 
 Type  : Slow 1200mV 85C Model Setup 'switch_debounce:db|clk_divider:U0|new_clk'
-Slack : -0.521
-TNS   : -0.521
+Slack : -0.807
+TNS   : -0.807
 
 Type  : Slow 1200mV 85C Model Hold 'switch_debounce:db|d_ff:D0|Q'
 Slack : 0.466
@@ -23,7 +23,7 @@ Slack : 0.734
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'switch_debounce:db|clk_divider:U0|new_clk'
-Slack : 0.794
+Slack : 0.902
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
@@ -39,19 +39,19 @@ Slack : -1.487
 TNS   : -2.974
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -14.115
-TNS   : -262.627
+Slack : -13.971
+TNS   : -259.819
 
 Type  : Slow 1200mV 0C Model Setup 'switch_debounce:db|d_ff:D0|Q'
-Slack : -1.730
-TNS   : -19.039
+Slack : -1.710
+TNS   : -18.284
 
 Type  : Slow 1200mV 0C Model Setup 'switch_debounce:db|clk_divider:U0|new_clk'
-Slack : -0.345
-TNS   : -0.345
+Slack : -0.602
+TNS   : -0.602
 
 Type  : Slow 1200mV 0C Model Hold 'switch_debounce:db|d_ff:D0|Q'
-Slack : 0.416
+Slack : 0.417
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
@@ -59,7 +59,7 @@ Slack : 0.681
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'switch_debounce:db|clk_divider:U0|new_clk'
-Slack : 0.796
+Slack : 0.877
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
@@ -75,32 +75,32 @@ Slack : -1.487
 TNS   : -2.974
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -5.878
-TNS   : -86.696
+Slack : -5.874
+TNS   : -86.329
 
 Type  : Fast 1200mV 0C Model Setup 'switch_debounce:db|d_ff:D0|Q'
-Slack : -0.325
-TNS   : -1.700
+Slack : -0.314
+TNS   : -1.417
 
 Type  : Fast 1200mV 0C Model Setup 'switch_debounce:db|clk_divider:U0|new_clk'
-Slack : -0.084
-TNS   : -0.084
+Slack : -0.281
+TNS   : -0.281
 
 Type  : Fast 1200mV 0C Model Hold 'switch_debounce:db|d_ff:D0|Q'
 Slack : 0.194
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'switch_debounce:db|clk_divider:U0|new_clk'
-Slack : 0.282
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.291
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.290
+Type  : Fast 1200mV 0C Model Hold 'switch_debounce:db|clk_divider:U0|new_clk'
+Slack : 0.409
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -80.914
+TNS   : -80.911
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'switch_debounce:db|d_ff:D0|Q'
 Slack : -1.000

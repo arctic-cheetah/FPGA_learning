@@ -1,5 +1,5 @@
 Analysis & Synthesis report for clk_counter_4_digits
-Sun Jan 09 23:38:32 2022
+Mon Jan 10 12:44:37 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,14 +13,13 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Port Connectivity Checks: "seven_segment_display:dipslay"
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
- 15. Analysis & Synthesis Suppressed Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "seven_segment_display:dipslay"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -47,16 +46,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jan 09 23:38:32 2022       ;
+; Analysis & Synthesis Status        ; Successful - Mon Jan 10 12:44:37 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; clk_counter_4_digits                        ;
 ; Top-level Entity Name              ; clk_counter_4_digits                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 283                                         ;
-;     Total combinational functions  ; 283                                         ;
-;     Dedicated logic registers      ; 86                                          ;
-; Total registers                    ; 86                                          ;
-; Total pins                         ; 13                                          ;
+; Total logic elements               ; 307                                         ;
+;     Total combinational functions  ; 307                                         ;
+;     Dedicated logic registers      ; 88                                          ;
+; Total registers                    ; 88                                          ;
+; Total pins                         ; 14                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -186,30 +185,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 283       ;
+; Estimated Total logic elements              ; 307       ;
 ;                                             ;           ;
-; Total combinational functions               ; 283       ;
+; Total combinational functions               ; 307       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 180       ;
+;     -- 4 input functions                    ; 212       ;
 ;     -- 3 input functions                    ; 13        ;
-;     -- <=2 input functions                  ; 90        ;
+;     -- <=2 input functions                  ; 82        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 207       ;
-;     -- arithmetic mode                      ; 76        ;
+;     -- normal mode                          ; 230       ;
+;     -- arithmetic mode                      ; 77        ;
 ;                                             ;           ;
-; Total registers                             ; 86        ;
-;     -- Dedicated logic registers            ; 86        ;
+; Total registers                             ; 88        ;
+;     -- Dedicated logic registers            ; 88        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 13        ;
+; I/O pins                                    ; 14        ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 86        ;
-; Total fan-out                               ; 1154      ;
-; Average fan-out                             ; 2.92      ;
+; Maximum fan-out                             ; 88        ;
+; Total fan-out                               ; 1288      ;
+; Average fan-out                             ; 3.04      ;
 +---------------------------------------------+-----------+
 
 
@@ -218,21 +217,10 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                 ; Entity Name           ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+-----------------------+--------------+
-; |clk_counter_4_digits              ; 283 (276)           ; 86 (86)                   ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |clk_counter_4_digits                               ; clk_counter_4_digits  ; work         ;
+; |clk_counter_4_digits              ; 307 (300)           ; 88 (88)                   ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |clk_counter_4_digits                               ; clk_counter_4_digits  ; work         ;
 ;    |seven_segment_display:dipslay| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clk_counter_4_digits|seven_segment_display:dipslay ; seven_segment_display ; work         ;
 +------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+---------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                        ;
-+---------------------------------------+-----------------------------------+
-; Register name                         ; Reason for Removal                ;
-+---------------------------------------+-----------------------------------+
-; increment_count[0]                    ; Merged with refresh_disp_count[0] ;
-; increment_count[1]                    ; Merged with refresh_disp_count[1] ;
-; Total Number of Removed Registers = 2 ;                                   ;
-+---------------------------------------+-----------------------------------+
 
 
 +------------------------------------------------------+
@@ -240,24 +228,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 86    ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 88    ;
+; Number of registers using Synchronous Clear  ; 16    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 22    ;
+; Number of registers using Clock Enable       ; 23    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |clk_counter_4_digits|n_digit[3]~reg0 ;
-; 9:1                ; 3 bits    ; 18 LEs        ; 15 LEs               ; 3 LEs                  ; Yes        ; |clk_counter_4_digits|bcd_show[2]     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |clk_counter_4_digits|btn_count[0]        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |clk_counter_4_digits|increment_count[10] ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |clk_counter_4_digits|n_digit[0]~reg0     ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 15 LEs               ; 3 LEs                  ; Yes        ; |clk_counter_4_digits|bcd_show[3]         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------+
@@ -274,22 +264,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 13                          ;
-; cycloneiii_ff         ; 86                          ;
-;     ENA               ; 22                          ;
-;     plain             ; 64                          ;
-; cycloneiii_lcell_comb ; 284                         ;
-;     arith             ; 76                          ;
-;         2 data inputs ; 75                          ;
-;         3 data inputs ; 1                           ;
-;     normal            ; 208                         ;
+; boundary_port         ; 14                          ;
+; cycloneiii_ff         ; 88                          ;
+;     ENA               ; 7                           ;
+;     ENA SCLR          ; 16                          ;
+;     plain             ; 65                          ;
+; cycloneiii_lcell_comb ; 308                         ;
+;     arith             ; 77                          ;
+;         2 data inputs ; 77                          ;
+;     normal            ; 231                         ;
 ;         1 data inputs ; 4                           ;
-;         2 data inputs ; 12                          ;
-;         3 data inputs ; 12                          ;
-;         4 data inputs ; 180                         ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 212                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 18.00                       ;
-; Average LUT depth     ; 11.49                       ;
+; Average LUT depth     ; 11.00                       ;
 +-----------------------+-----------------------------+
 
 
@@ -308,7 +298,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Jan 09 23:38:22 2022
+    Info: Processing started: Mon Jan 10 12:44:27 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off clk_counter_4_digits -c clk_counter_4_digits
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -327,7 +317,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
 Info (12021): Found 1 design units, including 1 entities, in source file clk_counter_4_digits.v
     Info (12023): Found entity 1: clk_counter_4_digits File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_4_digits/clk_counter_4_digits.v Line: 4
 Info (12127): Elaborating entity "clk_counter_4_digits" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at clk_counter_4_digits.v(43): truncated value with size 32 to match size of target (16) File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_4_digits/clk_counter_4_digits.v Line: 43
+Warning (10230): Verilog HDL assignment warning at clk_counter_4_digits.v(48): truncated value with size 32 to match size of target (16) File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_4_digits/clk_counter_4_digits.v Line: 48
 Info (12128): Elaborating entity "seven_segment_display" for hierarchy "seven_segment_display:dipslay" File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_4_digits/clk_counter_4_digits.v Line: 35
 Warning (10036): Verilog HDL or VHDL warning at seven_segment_display.v(7): object "neg_bcd" assigned a value but never read File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/seven_segment_display/seven_segment_display.v Line: 7
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
@@ -337,14 +327,14 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "sw_add" File: C:/Users/dudbo/Documents/intelFPGA/FPGA_learning/Cyclone_IV/clk_counter_4_digits/clk_counter_4_digits.v Line: 4
-Info (21057): Implemented 343 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
+Info (21057): Implemented 346 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
     Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 330 logic cells
+    Info (21061): Implemented 332 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4803 megabytes
-    Info: Processing ended: Sun Jan 09 23:38:33 2022
-    Info: Elapsed time: 00:00:11
+    Info: Peak virtual memory: 4800 megabytes
+    Info: Processing ended: Mon Jan 10 12:44:37 2022
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:21
 
 

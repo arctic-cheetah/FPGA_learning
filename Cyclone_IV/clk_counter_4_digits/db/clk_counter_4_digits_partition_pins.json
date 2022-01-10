@@ -50,6 +50,10 @@
 				{
 					"name" : "clk",
 					"strict" : false
+				},
+				{
+					"name" : "sw_reset",
+					"strict" : false
 				}
 			]
 		}

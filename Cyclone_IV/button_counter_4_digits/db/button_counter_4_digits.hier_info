@@ -1,6 +1,22 @@
 |button_counter_4_digits
 clk => clk.IN1
 sw_add => sw_add.IN1
+sw_reset => btn_count[0].ACLR
+sw_reset => btn_count[1].ACLR
+sw_reset => btn_count[2].ACLR
+sw_reset => btn_count[3].ACLR
+sw_reset => btn_count[4].ACLR
+sw_reset => btn_count[5].ACLR
+sw_reset => btn_count[6].ACLR
+sw_reset => btn_count[7].ACLR
+sw_reset => btn_count[8].ACLR
+sw_reset => btn_count[9].ACLR
+sw_reset => btn_count[10].ACLR
+sw_reset => btn_count[11].ACLR
+sw_reset => btn_count[12].ACLR
+sw_reset => btn_count[13].ACLR
+sw_reset => btn_count[14].ACLR
+sw_reset => btn_count[15].ACLR
 seg[0] <= seven_segment_display:dipslay.seg[0]
 seg[1] <= seven_segment_display:dipslay.seg[1]
 seg[2] <= seven_segment_display:dipslay.seg[2]
